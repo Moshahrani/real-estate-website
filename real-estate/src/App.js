@@ -23,12 +23,22 @@ const App = () => {
         }}
       >
         <Navbar.Brand
-          style={{ paddingLeft: "40px" }}
+          style={{ paddingLeft: "200px" }}
           href="#home"
-        >Shafiq Shahrani</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        ></Navbar.Brand>
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          style={{ borderColor: "#fff" }}
+        />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mr-auto">
+          {/* <img
+              src={logo}
+              width="280"
+              height="170"
+              alt="Logo"
+              style={{ position: "fixed", top: -20, left: 0 }}
+            /> */}
+          <Nav className="">
             <Nav.Link href="#pricing">Houses</Nav.Link>
             <Nav.Link href="#about">About</Nav.Link>
             <Nav.Link href="#moreInfo">More Info</Nav.Link>

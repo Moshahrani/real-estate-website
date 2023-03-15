@@ -1,18 +1,19 @@
 .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
     justify-content: center;
-    align-items: center;
   }
   
   .image {
-    width: 50%;
-    overflow: hidden;
+    /* overflow: hidden; */
+    height: 400px;
+    width: 320px;
   }
   
   .bio {
-    width: 50%;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
+    width: 50%;
   }
   
   .bio h2 {
@@ -20,6 +21,6 @@
   }
   
   .bio p {
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
   }
   

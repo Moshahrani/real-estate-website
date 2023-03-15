@@ -1,3 +1,5 @@
+import cococounty from "./cococounty.jpeg";
+
 const Home = () => {
     return (
         <div className="opening-statement">
@@ -8,7 +10,12 @@ const Home = () => {
           rooted in our team's extensive industry knowledge and local
           expertise.
         </h2>
+          <div
+          className="background-image"
+          style={{ backgroundImage: `url(${cococounty})` }}
+        ></div>
       </div>
+    
     )
 };
 

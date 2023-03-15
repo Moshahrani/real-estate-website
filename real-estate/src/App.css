@@ -33,7 +33,7 @@
 .nav-link {
   color: white !important;
   font-size: 18px;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .5px .5px 0 #000;
+  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .5px .5px 0 #000; */
 }
 
 .navbar-light .navbar-toggler-icon {

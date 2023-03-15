@@ -1,7 +1,7 @@
 import "./App.css";
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-// import logo from "./logo.png";
+import logo from "./logo.png";
 import bayarea from "./bayarea.jpg";
 import cococounty from "./cococounty.jpeg";
 import davisTeam from "./davisTeam.png";
@@ -31,13 +31,13 @@ const App = () => {
           style={{ borderColor: "#fff" }}
         />
         <Navbar.Collapse id="responsive-navbar-nav">
-          {/* <img
+          <img
               src={logo}
-              width="280"
-              height="170"
+              width="180"
+              height="180"
               alt="Logo"
-              style={{ position: "fixed", top: -20, left: 0 }}
-            /> */}
+              style={{ position: "fixed", top: -25, left: 0 }}
+            />
           <Nav className="">
             <Nav.Link href="#pricing">Houses</Nav.Link>
             <Nav.Link href="#about">About</Nav.Link>

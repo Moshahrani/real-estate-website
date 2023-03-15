@@ -1,7 +1,7 @@
 import "./App.css";
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import logo from "./logo.png";
+// import logo from "./logo.png";
 import bayarea from "./bayarea.jpg";
 import cococounty from "./cococounty.jpeg";
 import davisTeam from "./davisTeam.png";
@@ -49,7 +49,7 @@ const App = () => {
             width="340"
             height="240"
             alt="Logo"
-            style={{ position: "fixed", top: -65, right: 0 }}
+            style={{ position: "fixed", top: -65, right: 0, zIndex: 0 }}
           />
         </Navbar.Collapse>
       </Navbar>

@@ -13,6 +13,15 @@
   background-position: center;
 }
 
+.navbar {
+  z-index: 1; /* set z-index to 1 */
+}
+
+.navbar-toggler {
+  z-index: 2; /* set z-index to 2 */
+}
+
+
 .navbar-brand {
   color: white !important;
   font-size: 32px;

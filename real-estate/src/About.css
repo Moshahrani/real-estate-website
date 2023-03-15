@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image {
+    width: 50%;
+    overflow: hidden;
+  }
+  
+  .bio {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  .bio h2 {
+    grid-column: 1 / 2;
+  }
+  
+  .bio p {
+    grid-column: 2 / 3;
+  }
+  

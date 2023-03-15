@@ -11,6 +11,7 @@
   z-index: -1;
   /* background-size: cover; */
   background-position: center;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .navbar {
@@ -44,7 +45,7 @@
   text-align: center;
 }
 .statement {
-  padding-top: 40px;
+  padding-top: 50px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: 66px;
   color: white;
@@ -54,9 +55,8 @@
 .mission-statement {
   max-width: 800px; /* Change the value to your desired width */
   margin: 0 auto; /* Centers the element horizontally */
-  padding-top: 45px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bolder;
+  padding-top: 50px;
+  font-family:Arial, Helvetica, sans-serif;
   font-size: 34px;
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,

@@ -12,7 +12,8 @@ const Home = () => {
         </h2>
           <div
           className="background-image"
-          style={{ backgroundImage: `url(${cococounty})` }}
+          style={{ backgroundImage: `url(${cococounty})`,
+          backgroundSize: "cover", }}
         ></div>
       </div>
     

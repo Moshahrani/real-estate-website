@@ -1,7 +1,8 @@
 .container {
     display: grid;
-    grid-template-columns: 50% 50%;
-    justify-content: center;
+    grid-template-columns: 45% 60%;
+    /* justify-content: center; */
+    padding-top: 10px;
   }
   
   .image {
@@ -13,7 +14,10 @@
   .bio {
     display: grid;
     grid-template-columns: 1fr;
-    width: 50%;
+    color: white;
+    /* text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white; */
+    /* width: 50%; */
   }
   
   .bio h2 {

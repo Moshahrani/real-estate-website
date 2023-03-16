@@ -6,7 +6,7 @@ const About = () => {
     const styles = {
       backgroundImage: `url(${city})`,
       backgroundSize: "cover",
-      backgroundPosition: "center",
+    //   backgroundPosition: "center",
       height: "100vh",
     };
   
@@ -17,7 +17,7 @@ const About = () => {
             <img className="image" src={Bio1} alt="profilePic" />
           </div>
           <div className="bio">
-            <h2>Shafiq Shahrani</h2>
+            {/* <h2>Shafiq Shahrani</h2> */}
             <p>
             Shafiq Shahrani is a well-known real estate advisor in the San Francisco Bay Area, renowned for his exceptional knowledge of the market and his tireless work ethic. Born and raised in the East Bay, Shafiq began his career in the real estate industry soon after his college career at San Jose State University. 
 Over the years, Shafiq has earned a reputation as a trusted advisor to buyers and sellers alike, thanks to his unmatched level of expertise and his commitment to providing personalized service to each of his clients. He has a deep understanding of the local market, with a keen eye for finding hidden gems and uncovering untapped opportunities for his clients.

@@ -4,19 +4,37 @@ import "./CustomNavbar.css";
 import logo from './logo.png';
 import davisTeam from './davisTeam.png';
 
-const CustomNavbar = () => {
+// const CustomNavbar = () => {
+//   return (
+//     <Navbar
+//       className="navBar"
+//       collapseOnSelect
+//       expand="lg"
+//       style={{
+//         backgroundColor: "rgba(0,0,0,0.5)",
+//         fontSize: "1rem",
+//         color: "#fff",
+//         fontWeight: "bold",
+//         height: "100px",
+//       }}
+//     >
+const CustomNavbar = ({ background }) => {
+  const styles = {
+    backgroundImage: `url(${background})`,
+    backgroundColor: "rgba(0,0,0,0.5)",
+    backgroundSize: "cover",
+    height: "100px",
+    fontSize: "1rem",
+    color: "#fff",
+    fontWeight: "bold",
+  };
+
   return (
     <Navbar
       className="navBar"
       collapseOnSelect
       expand="lg"
-      style={{
-        backgroundColor: "rgba(0,0,0,0.5)",
-        fontSize: "1rem",
-        color: "#fff",
-        fontWeight: "bold",
-        height: "100px",
-      }}
+      style={{ ...styles }}
     >
       <Navbar.Brand
         style={{ paddingLeft: "200px" }}

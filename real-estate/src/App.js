@@ -4,6 +4,7 @@ import CustomNavbar from './CustomNavbar';
 import Home from './Home';
 import About from './About';
 import city from "./city.jpg";
+import SocialLinks from "./SocialLinks";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
         </Routes>
+        <SocialLinks />
       </div>
     </Router>
   );

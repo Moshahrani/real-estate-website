@@ -3,12 +3,10 @@ import cococounty from "./cococounty.jpeg";
 const Home = () => {
     return (
         <div className="opening-statement">
-        <h1 className="statement">Experience is everything!</h1>
+        <h1 className="statement">Who you work with matters!</h1>
         {/* <p>This is a paragraph of introductory text.</p> */}
         <h2 className="mission-statement">
-          Our clients can trust that they receive a customized service that is
-          rooted in our team's extensive industry knowledge and local
-          expertise.
+          Our clients know they are getting a personalized service based on our local expertise, industry knowledge and expert team.
         </h2>
           <div
           className="background-image"

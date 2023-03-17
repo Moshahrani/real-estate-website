@@ -1,60 +1,62 @@
 .background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    /* background-size: cover; */
-    background-position: center;
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-  
-  .navbar {
-    z-index: 1; /* set z-index to 1 */
-  }
-  
-  .navbar-toggler {
-    z-index: 2; /* set z-index to 2 */
-  }
-  
-  
-  .navbar-brand {
-    color: white !important;
-    font-size: 32px;
-    font-weight: bold;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-      .5px .5px 0 #000;
-  }
-  
-  .nav-link {
-    color: white !important;
-    font-size: 18px;
-    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .5px .5px 0 #000; */
-  }
-  
-  .navbar-light .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  }
-  
-  .opening-statement  {
-    text-align: center;
-  }
-  .statement {
-    padding-top: 50px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 66px;
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-      .5px .5px 0 #000;
-  }
-  .mission-statement {
-    max-width: 800px; /* Change the value to your desired width */
-    margin: 0 auto; /* Centers the element horizontally */
-    padding-top: 50px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 34px;
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-      1px 1px 0 #000;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  /* background-size: cover; */
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+img:hover {
+  cursor: pointer;
+}
+.navbar {
+  z-index: 1; /* set z-index to 1 */
+}
+
+.navbar-toggler {
+  z-index: 2; /* set z-index to 2 */
+}
+
+.navbar-brand {
+  color: white !important;
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    0.5px 0.5px 0 #000;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 18px;
+  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, .5px .5px 0 #000; */
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.opening-statement {
+  text-align: center;
+}
+.statement {
+  padding-top: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 66px;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    0.5px 0.5px 0 #000;
+}
+.mission-statement {
+  max-width: 800px; /* Change the value to your desired width */
+  margin: 0 auto; /* Centers the element horizontally */
+  padding-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 34px;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}

@@ -1,0 +1,22 @@
+form {
+  padding: 220px;
+  max-width: 700px;
+  margin: auto;
+}
+
+form input,
+form textarea {
+  height: 30px;
+}
+
+form label,
+form input::placeholder,
+form textarea::placeholder {
+  font-size: 14px;
+}
+
+.contactForm {
+    color: white;
+    font-size: 14px;
+}
+

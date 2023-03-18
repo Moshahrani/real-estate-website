@@ -1,39 +1,32 @@
-import { Form, Col, Button } from "react-bootstrap";
+import { FaUser, FaPhone, FaEnvelope, FaIdCard, FaMapMarkerAlt } from 'react-icons/fa';
 import "./Contact.css";
-import bayarea from "./bayarea.jpg";
 
-const ContactForm = (props) => {
+const Contact = () => {
   return (
-    <div
-          className="background-image"
-          style={{ backgroundImage: `url(${bayarea})`,
-          backgroundSize: "cover", }}
-        >
-       <Form className="contactForm">
-        <Form.Group as={Col} controlId="formName">
-          <Form.Label>Name*</Form.Label>
-          <Form.Control name="name" type="name" placeholder="Name" />
-        </Form.Group>
-
-        <Form.Group as={Col} controlId="formEmail">
-          <Form.Label>Email*</Form.Label>
-          <Form.Control name="email" type="email" placeholder="Enter email" />
-        </Form.Group>
-        <Form.Group as={Col} controlId="formPhone">
-          <Form.Label>Phone Number</Form.Label>
-          <Form.Control name="phone" placeholder="" />
-        </Form.Group>
-        <Form.Group as={Col} id="formMessage">
-          <Form.Label>Message*</Form.Label>
-          <Form.Control name="message" as="textarea" rows={3} />
-        </Form.Group>
-
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
-      </Form>
+    <div className="container contact-container">
+    <div className="row">
+        <div className="col-md-6">
+          <div className="form-group">
+            <FaUser /> <div>Shafiq Shahrani</div>
+          </div>
+          <div className="form-group">
+            <FaPhone /> <div>9254052719</div>
+          </div>
+          <div className="form-group">
+            <FaEnvelope /> <div>shahranihomes@gmail.com</div>
+          </div>
+        </div>
+        <div className="col-md-6">
+          <div className="form-group">
+            <FaIdCard /> <div>DRE #02192359</div>
+          </div>
+          <div className="form-group">
+            <FaMapMarkerAlt/> <div>2890 N Main Street,<br></br> Walnut Creek, CA</div>
+          </div>
+        </div>
       </div>
+    </div>
   );
 };
 
-export default ContactForm;
+export default Contact;

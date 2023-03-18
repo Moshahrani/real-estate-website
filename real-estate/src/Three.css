@@ -1,0 +1,18 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns of equal width */
+    grid-gap: 1rem; /* Space between boxes */
+  }
+  
+  .box {
+    background-color: #ddd;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 600px) {
+    /* Change to a vertical grid on small screens */
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import CustomNavbar from './CustomNavbar';
 import Home from './Home';
 import About from './About';
+import ContactForm from "./Contact";
 import city from "./city.jpg";
 import SocialLinks from "./SocialLinks";
 
@@ -14,6 +15,7 @@ const App = () => {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<ContactForm />} />
         </Routes>
         <SocialLinks />
       </div>

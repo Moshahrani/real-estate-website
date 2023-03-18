@@ -55,7 +55,7 @@ const CustomNavbar = ({ background }) => {
             // onClick={handleClick}
           />
         </Link>
-        <Nav className="">
+        <Nav className="navOptions">
           <Nav.Link href="#pricing">Houses</Nav.Link>
           <Nav.Link href="#moreInfo">More Info</Nav.Link>
           <Nav.Link as={Link} to="/about">

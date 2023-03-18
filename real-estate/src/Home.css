@@ -1,13 +1,14 @@
 .statement  {
+    font-family: 'Raleway', sans-serif;
     color:white;
     opacity: .7;
     text-shadow: -2px 2px 0 black, 1px -1px 0 black, -1px 1px 0 black,
     2px 2px 0 black;
 }
 .mission-statement  {
-    padding-top: 60px;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 75px;
     color:white;
-    opacity: .85;
     text-shadow: -2px 2px 0 black, 1px -1px 0 black, -1px 1px 0 black,
     2px 2px 0 black;
 }

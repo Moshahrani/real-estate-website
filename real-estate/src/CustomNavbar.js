@@ -63,6 +63,7 @@ const CustomNavbar = ({ background }) => {
           </Nav.Link>
           <Nav.Link href="contact">Contact</Nav.Link>
         </Nav>
+        <a href="https://www.davisteamexp.com">
         <img
           src={davisTeam}
           width="340"
@@ -70,6 +71,7 @@ const CustomNavbar = ({ background }) => {
           alt="Logo"
           style={{ position: "fixed", top: -65, right: 0, zIndex: 0 }}
         />
+        </a>
       </Navbar.Collapse>
     </Navbar>
   );

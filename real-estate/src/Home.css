@@ -1,0 +1,13 @@
+.statement  {
+    color:white;
+    opacity: .7;
+    text-shadow: -2px 2px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    2px 2px 0 black;
+}
+.mission-statement  {
+    padding: 40px;
+    color:white;
+    opacity: .85;
+    text-shadow: -2px 2px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    2px 2px 0 black;
+}

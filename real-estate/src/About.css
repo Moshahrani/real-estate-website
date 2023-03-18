@@ -15,6 +15,9 @@
     display: grid;
     grid-template-columns: 1fr;
     color: white;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
     /* text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
     1px 1px 0 white; */
     /* width: 50%; */

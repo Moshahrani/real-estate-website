@@ -1,4 +1,5 @@
 import cococounty from "./cococounty.jpeg";
+import "./Home.css";
 
 const Home = () => {
     return (

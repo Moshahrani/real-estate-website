@@ -7,7 +7,7 @@ const SocialLinks = () => {
       <a href="https://www.facebook.com"><FaFacebookF /></a>
       <a href="https://www.instagram.com"><FaInstagram /></a>
       {/* <a href="https://twitter.com"><FaTwitter /></a> */}
-      <a href="https://www.linkedin.com"><FaLinkedinIn /></a>
+      <a href="https://www.linkedin.com/in/shafiq-shahrani"><FaLinkedinIn /></a>
     </div>
   );
 };

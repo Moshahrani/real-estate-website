@@ -1,6 +1,7 @@
 .contact-container {
     /* position:absolute; */
     bottom: 0;
+    left: 30;
     /* right: -650px; */
     position: fixed;
     /* display: flex;
@@ -24,5 +25,6 @@
   .form-group > div {
     margin-left: 10px;
     font-size: 16px;
+    width: 100px;
   }
   

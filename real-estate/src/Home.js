@@ -18,7 +18,7 @@ const Home = () => {
     position: "absolute",
     top: 0,
     left: 0,
-    height: "250%",
+    height: "100vh",
     width: "100%",
     backgroundColor: "rgba(0, 0, 0, 0.25)",
     zIndex: 1,

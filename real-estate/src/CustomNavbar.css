@@ -64,3 +64,8 @@ img:hover {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
 }
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    padding-right: 50px;
+  }
+}

@@ -7,6 +7,9 @@ import ContactForm from "./ContactForm";
 import Contact from "./Contact";
 import city from "./city.jpg";
 import SocialLinks from "./SocialLinks";
+import MoreInfo from "./MoreInfo";
+import Houses from "./Houses";
+
 
 const App = () => {
   
@@ -16,6 +19,8 @@ const App = () => {
         <CustomNavbar background={city} />
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route path="/houses" element={<Houses />} />
+          <Route path="/moreInfo" element={<MoreInfo />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<ContactForm />} />
         </Routes>

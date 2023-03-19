@@ -1,12 +1,12 @@
 .contact-container {
-    position:absolute;
+    /* position:absolute; */
     bottom: 0;
-    right: -730px;
+    /* right: -650px; */
     position: fixed;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-start;
+    align-items: flex-start; */
     /* width: 100px; */
     padding-bottom: 40px;
     color: white;

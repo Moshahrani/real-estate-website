@@ -29,7 +29,7 @@ const About = () => {
     <div style={styles}>
       <div style={overlayStyles}></div>
       <div style={contentStyles} className="container">
-        <div className="pic">
+        <div class="image-container">
           <img className="image" src={Bio1} alt="profilePic" />
         </div>
         <div className="bio">

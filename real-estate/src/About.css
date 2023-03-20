@@ -31,4 +31,20 @@
   .bio p {
     grid-column: 1 / 2;
   }
+  @media only screen and (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px;
+    }
+  
+    .image {
+      width: 320px;
+    }
+  }
   

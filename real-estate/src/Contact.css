@@ -1,5 +1,5 @@
 .contact-container {
-    /* position:absolute; */
+    position: static;
     bottom: 0;
     left: 30;
     position: fixed;
@@ -9,7 +9,7 @@
     align-items: flex-start; 
     padding-bottom: 40px;
     color: white;
-    z-index: 6;
+    z-index: 4;
 
   }
 

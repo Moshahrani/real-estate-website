@@ -1,6 +1,6 @@
 import cococounty from "./cococounty.jpeg";
 import "./Home.css";
-import ThreeBoxes from "./Three";
+import Associations from "./Associations";
 
 const Home = () => {
   const styles = {
@@ -54,7 +54,7 @@ const Home = () => {
         }}
       ></div> */}
       </div>
-      {/* <ThreeBoxes /> */}
+      <Associations />
     </div>
   );
 };

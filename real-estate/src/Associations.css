@@ -1,0 +1,17 @@
+.footer {
+    position: static;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-bottom: 40px;
+    z-index: 2;
+  }
+  
+  .footer-image {
+    flex: 1;
+    max-width: 150px;
+    margin: 10px;
+    z-index: 20;
+  }

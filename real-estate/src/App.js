@@ -9,7 +9,7 @@ import city from "./city.jpg";
 import SocialLinks from "./SocialLinks";
 import MoreInfo from "./MoreInfo";
 import Houses from "./Houses";
-
+// import Associations from "./Associations";
 
 const App = () => {
   
@@ -25,6 +25,7 @@ const App = () => {
           <Route path="/contact" element={<ContactForm />} />
         </Routes>
         <Contact />
+        {/* <Associations /> */}
         <SocialLinks />
       </div>
     </Router>

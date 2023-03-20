@@ -2,13 +2,14 @@ import { Form, Col, Button } from "react-bootstrap";
 import "./ContactForm.css";
 import bayarea from "./bayarea.jpg";
 
-const ContactForm = (props) => {
+const ContactForm = () => {
   return (
+    <div>
     <div
           className="background-image"
           style={{ backgroundImage: `url(${bayarea})`,
-          backgroundSize: "cover", }}
-        >
+          backgroundSize: "cover" }}
+        /><div>
        <Form className="contactForm">
         <Form.Group as={Col} controlId="formName">
           <Form.Label>Name*</Form.Label>
@@ -32,6 +33,7 @@ const ContactForm = (props) => {
           Submit
         </Button>
       </Form>
+      </div>
       </div>
   );
 };

@@ -77,7 +77,7 @@ const CustomNavbar = ({ background }) => {
         style={{ borderColor: "#fff", position: "absolute", left: "10px" }}
         onClick={handleToggle}
       />
-      <Navbar.Collapse id="responsive-navbar-nav">
+      <Navbar.Collapse id="responsive-navbar-nav"  className={toggle ? "show-menu" : ""}>
         <Nav.Link href="/">
           <img
             src={logo}

@@ -10,7 +10,7 @@ const UnderConstruction = () => {
           backgroundRepeat: "no-repeat",
           height: "100vh",
           maxWidth: "100%",
-          zIndex: 999
+          zIndex: 9,
         }}
       ></div>
     );

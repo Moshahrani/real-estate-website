@@ -44,10 +44,10 @@ const CustomNavbar = ({ background }) => {
 
   // resets toggle back to false so route change doesn't show
   // menu when scaling screen size down again
-  const handleRouteChange = () => {
-    setRouteChange(true);
-    setToggle(false);
-  };
+  // const handleRouteChange = () => {
+  //   setRouteChange(true);
+  //   setToggle(false);
+  // };
 
   const styles = {
     backgroundImage: `url(${background})`,
@@ -94,16 +94,16 @@ const CustomNavbar = ({ background }) => {
           />
         </Nav.Link>
         <Nav className="navOptions ml-auto">
-          <Nav.Link as={Link} to="/houses" onClick={handleRouteChange}>
+          <Nav.Link as={Link} to="/houses" >
             Houses
           </Nav.Link>
-          <Nav.Link as={Link} to="/moreInfo" onClick={handleRouteChange}>
+          <Nav.Link as={Link} to="/moreInfo" >
             More Info
           </Nav.Link>
-          <Nav.Link as={Link} to="/about" onClick={handleRouteChange}>
+          <Nav.Link as={Link} to="/about" >
             About
           </Nav.Link>
-          <Nav.Link as={Link} to="contact" onClick={handleRouteChange}>
+          <Nav.Link as={Link} to="contact" >
             Contact
           </Nav.Link>
         </Nav>

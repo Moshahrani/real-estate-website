@@ -24,7 +24,9 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<ContactForm />} />
         </Routes>
-        <Contact />
+         <div className="d-none d-lg-block">
+          <Contact />
+        </div>
         {/* <Associations /> */}
         <SocialLinks />
       </div>

@@ -14,9 +14,8 @@ const CustomNavbar = ({ background }) => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
         setToggle(false);
-
       }
-    }; 
+    };
 
     window.addEventListener("resize", handleResize);
 
@@ -30,26 +29,25 @@ const CustomNavbar = ({ background }) => {
       if (window.innerWidth > 768 && toggle) {
         setToggle(false);
       }
-    }; 
-  
+    };
+
     window.addEventListener("resize", handleResize);
-  
+
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, [toggle]);
 
-
   const handleToggle = () => {
     setToggle(!toggle);
   };
-  
+
   // resets toggle back to false so route change doesn't show
   // menu when scaling screen size down again
   const handleRouteChange = () => {
     setRouteChange(true);
     setToggle(false);
-  }
+  };
 
   const styles = {
     backgroundImage: `url(${background})`,
@@ -77,7 +75,10 @@ const CustomNavbar = ({ background }) => {
         style={{ borderColor: "#fff", position: "absolute", left: "10px" }}
         onClick={handleToggle}
       />
-      <Navbar.Collapse id="responsive-navbar-nav"  className={toggle ? "show-menu" : ""}>
+      <Navbar.Collapse
+        id="responsive-navbar-nav"
+        className={toggle ? "show-menu" : ""}
+      >
         <Nav.Link href="/">
           <img
             src={logo}
@@ -92,13 +93,19 @@ const CustomNavbar = ({ background }) => {
             }}
           />
         </Nav.Link>
-        <Nav className="navOptions ml-auto" >
-          <Nav.Link href="/houses" onClick={handleRouteChange}>Houses</Nav.Link>
-          <Nav.Link href="/moreInfo" onClick={handleRouteChange}>More Info</Nav.Link>
-          <Nav.Link href="/about" onClick={handleRouteChange}>
+        <Nav className="navOptions ml-auto">
+          <Nav.Link as={Link} to="/houses" onClick={handleRouteChange}>
+            Houses
+          </Nav.Link>
+          <Nav.Link as={Link} to="/moreInfo" onClick={handleRouteChange}>
+            More Info
+          </Nav.Link>
+          <Nav.Link as={Link} to="/about" onClick={handleRouteChange}>
             About
           </Nav.Link>
-          <Nav.Link href="contact" onClick={handleRouteChange}>Contact</Nav.Link>
+          <Nav.Link as={Link} to="contact" onClick={handleRouteChange}>
+            Contact
+          </Nav.Link>
         </Nav>
         <a href="https://www.davisteamexp.com">
           <img

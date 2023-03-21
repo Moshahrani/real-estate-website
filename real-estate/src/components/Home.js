@@ -1,5 +1,5 @@
-import cococounty from "./cococounty.jpeg";
-import "./Home.css";
+import cococounty from "../cococounty.jpeg";
+import "../Home.css";
 import Associations from "./Associations";
 
 const Home = () => {

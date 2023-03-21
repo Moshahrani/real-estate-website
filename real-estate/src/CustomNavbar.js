@@ -7,47 +7,10 @@ import davisTeam from "./davisTeam.png";
 
 const CustomNavbar = ({ background }) => {
   const [toggle, setToggle] = useState(false);
-  const [routeChange, setRouteChange] = useState(false);
-
-  // remove menu when scaling screen size up
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 768) {
-        setToggle(false);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 768 && toggle) {
-        setToggle(false);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [toggle]);
 
   const handleToggle = () => {
     setToggle(!toggle);
   };
-
-  // resets toggle back to false so route change doesn't show
-  // menu when scaling screen size down again
-  // const handleRouteChange = () => {
-  //   setRouteChange(true);
-  //   setToggle(false);
-  // };
 
   const styles = {
     backgroundImage: `url(${background})`,
@@ -62,16 +25,13 @@ const CustomNavbar = ({ background }) => {
   return (
     <Navbar
       className="navBar"
-      collapseOnSelect
+      // collapseOnSelect
       expand="lg"
       style={{ ...styles }}
     >
-      <Navbar.Brand
-        style={{ paddingLeft: "200px" }}
-        href="#home"
-      ></Navbar.Brand>
+      <Navbar.Brand style={{ paddingLeft: "200px" }}></Navbar.Brand>
       <Navbar.Toggle
-        aria-controls="responsive-navbar-nav"
+        // aria-controls="responsive-navbar-nav"
         style={{ borderColor: "#fff", position: "absolute", left: "10px" }}
         onClick={handleToggle}
       />
@@ -94,16 +54,19 @@ const CustomNavbar = ({ background }) => {
           />
         </Nav.Link>
         <Nav className="navOptions ml-auto">
-          <Nav.Link as={Link} to="/houses" >
+          <Nav.Link as={Link} to="/">
+            Home
+          </Nav.Link>
+          <Nav.Link as={Link} to="/houses">
             Houses
           </Nav.Link>
-          <Nav.Link as={Link} to="/moreInfo" >
+          <Nav.Link as={Link} to="/moreInfo">
             More Info
           </Nav.Link>
-          <Nav.Link as={Link} to="/about" >
+          <Nav.Link as={Link} to="/about">
             About
           </Nav.Link>
-          <Nav.Link as={Link} to="contact" >
+          <Nav.Link as={Link} to="contact">
             Contact
           </Nav.Link>
         </Nav>

@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Form, Col, Button } from "react-bootstrap";
-import "./ContactForm.css";
-import bayarea from "./bayarea.jpg";
+import "../ContactForm.css";
+import bayarea from "../bayarea.jpg";
 import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {

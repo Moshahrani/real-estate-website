@@ -37,7 +37,7 @@ const CustomNavbar = ({ background }) => {
       />
       <Navbar.Collapse
         id="responsive-navbar-nav"
-        className={toggle ? "show-menu" : ""}
+        className={toggle ? "show-menu" : "hide"}
       >
         <Nav.Link href="/">
           <img

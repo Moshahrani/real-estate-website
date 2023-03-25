@@ -7,7 +7,7 @@ import davisTeam from "./davisTeam.png";
 
 const CustomNavbar = ({ background }) => {
   const [toggle, setToggle] = useState(false);
-
+  
   const handleToggle = () => {
     setToggle(!toggle);
   };

@@ -12,7 +12,7 @@ import Houses from "./components/Houses";
 // import Associations from "./Associations";
 
 const App = () => {
-  
+
   return (
     <Router>
       <div>

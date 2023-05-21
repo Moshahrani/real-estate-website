@@ -39,7 +39,7 @@ const CustomNavbar = ({ background }) => {
         id="responsive-navbar-nav"
         className={toggle ? "show-menu" : "hide"}
       >
-        <Nav.Link href="/">
+        {/* <Nav.Link href="/">
           <img
             src={logo}
             width="180"
@@ -52,7 +52,7 @@ const CustomNavbar = ({ background }) => {
               display: toggle ? "none" : "block",
             }}
           />
-        </Nav.Link>
+        </Nav.Link> */}
         <Nav className="navOptions ml-auto">
           <Nav.Link as={Link} to="/">
             Home

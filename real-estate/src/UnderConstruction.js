@@ -1,4 +1,4 @@
-import underConstruction from "./underConstruction.jpg";
+import underConstruction from ".//media/underConstruction.jpg";
 
 const UnderConstruction = () => {
     return (

@@ -1,11 +1,12 @@
 import UnderConstruction from "../UnderConstruction"
 
 const Houses = () => {
+
   return (
     <div>
-        <UnderConstruction />
+      <UnderConstruction />
     </div>
   );
-}
+};
 
 export default Houses;

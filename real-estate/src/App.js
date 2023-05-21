@@ -5,10 +5,11 @@ import Home from './components/Home';
 import About from './components/About';
 import ContactForm from "./components/ContactForm";
 import Contact from "./components/Contact";
-import city from "./city.jpg";
+import city from ".//media/city.jpg";
 import SocialLinks from "./components/SocialLinks";
 import MoreInfo from "./components/MoreInfo";
 import Houses from "./components/Houses";
+import HouseList from "./components/HouseList"
 // import Associations from "./Associations";
 
 const App = () => {
@@ -19,7 +20,15 @@ const App = () => {
         <CustomNavbar background={city} />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/houses" element={<Houses />} />
+          <Route exact path="/" element={<Home />} />
+          <Route
+            path="/houses"
+            element={
+              <HouseList>
+                {(houseData) => <Houses houseData={houseData} />}
+              </HouseList>
+            }
+          />
           <Route path="/moreInfo" element={<MoreInfo />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<ContactForm />} />

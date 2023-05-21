@@ -1,6 +1,6 @@
-import "../About.css";
-import Bio1 from "../Bio1.png";
-import city from "../city.jpg";
+import "../css/About.css";
+import Bio1 from "../media/Bio1.png";
+import city from "../media/city.jpg";
 
 const About = () => {
   const styles = {

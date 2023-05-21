@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "./CustomNavbar.css";
-import logo from "./logo.png";
-import davisTeam from "./davisTeam.png";
+import ".//css/CustomNavbar.css";
+import logo from ".//media/logo.png";
+import davisTeam from ".//media/davisTeam.png";
 
 const CustomNavbar = ({ background }) => {
   const [toggle, setToggle] = useState(false);

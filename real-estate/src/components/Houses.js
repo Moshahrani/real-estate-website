@@ -4,7 +4,7 @@ const Houses = () => {
 
   return (
     <div>
-      <UnderConstruction />
+      {/* <UnderConstruction /> */}
     </div>
   );
 };

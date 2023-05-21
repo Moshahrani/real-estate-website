@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import "../css/HouseList.css";
 
 const HouseList = () => {
   const [houseData, setHouseData] = useState([]);
@@ -33,9 +34,9 @@ const HouseList = () => {
   }, []);
 
   return (
-    <div>
-       {houseData && houseData.map((house) => (
-        <div key={house.zpid}>
+    <div className="grid-container">
+      {houseData && houseData.map((house) => (
+        <div key={house.zpid} className="grid-item">
           <h2>{house.address}</h2>
           <p>Price: {house.price}</p>
           <p>Bedrooms: {house.bedrooms}</p>

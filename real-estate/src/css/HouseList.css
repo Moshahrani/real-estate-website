@@ -28,6 +28,10 @@
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
+.grid-item p {
+    font-family: 'Garamond', serif;
+  }
+
 
 .grid-image {
     max-width: 350px; 
@@ -41,9 +45,9 @@
     align-items: center;
   }
   
-  .divider {
-    height: 1px;
-    width: 20px;
-    background-color: #ccc;
-    margin: 0 10px;
-  }
+ .divider {
+  width: 1px;
+  height: 20px;
+  background-color: #ccc;
+  margin: 0 10px;
+}

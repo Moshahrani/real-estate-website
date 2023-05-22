@@ -17,7 +17,7 @@ const App = () => {
   return (
     <Router>
       <div>
-        <CustomNavbar background={city} />
+        <CustomNavbar />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/" element={<Home />} />

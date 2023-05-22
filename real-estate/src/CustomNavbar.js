@@ -12,9 +12,17 @@ const CustomNavbar = ({ background }) => {
     setToggle(!toggle);
   };
 
+  // const styles = {
+  //   backgroundImage: `url(${background})`,
+  //   backgroundColor: "rgba(0,0,0,0.5)",
+  //   backgroundSize: "cover",
+  //   height: "100px",
+  //   fontSize: "1rem",
+  //   color: "#fff",
+  //   fontWeight: "bold",
+  // };
   const styles = {
-    backgroundImage: `url(${background})`,
-    backgroundColor: "rgba(0,0,0,0.5)",
+    backgroundColor:  "#333", // Change the background color here
     backgroundSize: "cover",
     height: "100px",
     fontSize: "1rem",

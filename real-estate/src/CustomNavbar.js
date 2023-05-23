@@ -10,10 +10,11 @@ const CustomNavbar = () => {
 
   return (
     <Navbar
+      className="custom-navbar"
       expand="lg"
       expanded={expanded}
       onToggle={setExpanded}
-      bg="dark"
+      // bg="dark"
       variant="dark"
     >
       <Navbar.Brand as={Link} to="/" onClick={() => setExpanded(false)}>

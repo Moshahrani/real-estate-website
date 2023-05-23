@@ -1,9 +1,23 @@
 .custom-logo {
   width: 300px;
   height: 150px;
-  object-fit: contain; /* This will ensure your logo maintains its aspect ratio */
+  object-fit: contain;
 }
 
-.navbar {
+.custom-logo:hover {
+  cursor:pointer;
+}
+
+.custom-navbar {
   z-index: 5;
+  background-color: #333;
+}
+
+.custom-navbar .nav-link {
+  color: #fff;
+  font-size: 20px; 
+}
+
+.navbar-toggler {
+  margin-right: 20px;
 }

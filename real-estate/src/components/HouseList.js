@@ -43,14 +43,25 @@ const HouseList = () => {
               alt={house.address}
               className="grid-image"
             />
+            <p className="priceTag">
+              {" "}
+              {"$"}
+              {Number(house.price).toLocaleString()}
+            </p>
             <p>{house.address}</p>
-            <p>Price: {house.price}</p>
             <div className="listing-info">
-              <p>Bedrooms: {house.bedrooms}</p>
+              <p>
+                <span className="first-word">Bedrooms:</span> {house.bedrooms}
+              </p>
               <div className="divider"></div>
-              <p>Bathrooms: {house.bathrooms}</p>
+              <p>
+                <span className="first-word">Bathrooms:</span> {house.bathrooms}
+              </p>
               <div className="divider"></div>
-              <p>Living Area: {house.livingArea}</p>
+              <p>
+                <span className="first-word">Living Area:</span>{" "}
+                {house.livingArea}
+              </p>
             </div>
           </div>
         ))}

@@ -6,6 +6,7 @@
   margin: 0 auto;
   justify-items: center;
   justify-content: space-between;
+  padding-bottom: 60px;
 }
 
 @media (min-width: 768px) {

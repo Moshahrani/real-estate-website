@@ -7,7 +7,7 @@ const About = () => {
     backgroundImage: `url(${city})`,
     backgroundSize: "cover",
     // backgroundPosition: "bottom",
-    height: "100vh",
+    minHeight: "100vh",
   };
 
   const overlayStyles = {

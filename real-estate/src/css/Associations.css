@@ -11,7 +11,13 @@
   
   .footer-image {
     flex: 1;
-    max-width: 150px;
+    max-width: 120px;
     margin: 10px;
     z-index: 20;
+  }
+
+  @media (max-width: 768px) { /* adjust breakpoint as needed */
+    .footer-image {
+      margin: 5px;
+    }
   }

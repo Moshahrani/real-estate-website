@@ -13,14 +13,12 @@ import HouseList from "./components/HouseList"
 // import Associations from "./Associations";
 
 const App = () => {
-
   return (
     <Router>
       <div>
         <CustomNavbar />
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route
             path="/houses"
             element={
@@ -33,7 +31,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<ContactForm />} />
         </Routes>
-         <div className="d-none d-lg-block">
+        <div className="d-none d-lg-block">
           <Contact />
         </div>
         {/* <Associations /> */}

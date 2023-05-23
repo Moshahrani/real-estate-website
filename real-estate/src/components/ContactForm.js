@@ -7,7 +7,6 @@ import emailjs from '@emailjs/browser';
 const ContactForm = () => {
   const form = useRef();
 
-
   const [formValues, setFormValues] = useState({
     name: '',
     email: '',
@@ -72,10 +71,12 @@ const ContactForm = () => {
     return isValid;
   };
 
-  return (
-    <div>
-    <div className="background-image" style={{ backgroundImage: `url(${bayarea})`, backgroundSize: "cover" }}></div>
-      <Form ref={form}>
+   return (
+    <div className="background-image" style={{
+      backgroundImage: `url(${bayarea})`,
+      
+    }}>
+      <Form ref={form}> 
         <Form.Group as={Col} controlId="formGridName">
           <Form.Label>Name*</Form.Label>
           <Form.Control name="name" type="name" placeholder="Name" value={formValues.name} onChange={(e) => setFormValues({ ...formValues, name: e.target.value })} isInvalid={!!formErrors.name} />
@@ -95,7 +96,7 @@ const ContactForm = () => {
         
         <Form.Group as={Col} id="formGridmessage">
           <Form.Label>Message*</Form.Label>
-          <Form.Control name="message" as="textarea" rows={3} value={formValues.message} onChange={(e) => setFormValues({ ...formValues, message: e.target.value })} isInvalid={!!formErrors.message} />
+          <Form.Control name="message" as="textarea" style={{height: "100px"}}  rows={3} value={formValues.message} onChange={(e) => setFormValues({ ...formValues, message: e.target.value })} isInvalid={!!formErrors.message} />
           <Form.Control.Feedback type="invalid">{formErrors.message}</Form.Control.Feedback>
         </Form.Group>
 

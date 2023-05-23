@@ -1,5 +1,9 @@
 .custom-logo {
-  width: 250px;
-  height: 140px;
+  width: 300px;
+  height: 150px;
   object-fit: contain; /* This will ensure your logo maintains its aspect ratio */
+}
+
+.navbar {
+  z-index: 5;
 }

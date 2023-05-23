@@ -34,6 +34,7 @@ const About = () => {
         </div>
         <div className="bio">
           {/* <h2>Shafiq Shahrani</h2> */}
+          <div className="bio-content">
           <p>
             Shafiq Shahrani is a well-known real estate advisor in the San
             Francisco Bay Area, renowned for his exceptional knowledge of the
@@ -46,6 +47,7 @@ const About = () => {
             deep understanding of the local market, with a keen eye for finding
             hidden gems and uncovering untapped opportunities for his clients.
             </p>
+            </div>
             {/* Throughout his career, Shafiq has been recognized for his outstanding sales performance, earning numerous accolades and awards for his achievements. He is widely respected within the industry, both for his skills as a negotiator and for his unwavering dedication to achieving the best possible outcome for his clients.
 Shafiq's success is rooted in his passion for real estate, which is evident in every aspect of his work. He takes the time to listen carefully to his clients' needs and goals, and works tirelessly to ensure that they are met. His attention to detail, strong work ethic, and unwavering commitment to his clients have made him a top-performing agent in the Bay Area.
 Outside of work, Shafiq enjoys spending time with his family, exploring the great outdoors, and giving back to his community. He is an active member of several local charities and organizations, and is committed to making a positive impact in the lives of those around him.

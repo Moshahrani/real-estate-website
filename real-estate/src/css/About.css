@@ -1,3 +1,19 @@
+
+@keyframes flyIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.image, .bio {
+  animation: flyIn 2s ease-out;
+}
+
 .container {
     display: grid;
     grid-template-columns: 45% 60%;

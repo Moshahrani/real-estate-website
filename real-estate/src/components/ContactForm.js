@@ -76,7 +76,7 @@ const ContactForm = () => {
       backgroundImage: `url(${bayarea})`,
       
     }}>
-      <Form ref={form}> 
+      <Form ref={form} className="myForm"> 
         <Form.Group as={Col} controlId="formGridName">
           <Form.Label>Name*</Form.Label>
           <Form.Control name="name" type="name" placeholder="Name" value={formValues.name} onChange={(e) => setFormValues({ ...formValues, name: e.target.value })} isInvalid={!!formErrors.name} />

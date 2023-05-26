@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ".//css/CustomNavbar.css";
-import logo from ".//media/logo.png";
+import logo2 from ".//media/logo-2.png";
 import davisTeam from ".//media/davisTeam-2.png";
 
 const CustomNavbar = () => {
@@ -18,7 +18,7 @@ const CustomNavbar = () => {
       variant="dark"
     >
       <Navbar.Brand as={Link} to="/" onClick={() => setExpanded(false)}>
-        <img src={davisTeam} className="custom-logo" alt="Brand Logo" />
+        <img src={logo2} className="personal-logo" alt="Personal Logo" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -39,6 +39,7 @@ const CustomNavbar = () => {
             Contact
           </Nav.Link>
         </Nav>
+        <img src={davisTeam}  className="custom-logo" alt="Brand Logo" />
       </Navbar.Collapse>
     </Navbar>
   );

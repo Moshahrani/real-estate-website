@@ -37,7 +37,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div >
       <div style={styles}>
         <div className="opening-statement" style={{ position: "relative" }}>
           {/* <div style={overlayStyles}></div> */}

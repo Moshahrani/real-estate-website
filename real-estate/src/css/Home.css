@@ -11,8 +11,8 @@
   text-shadow: -2px 2px 0 black, 1px -1px 0 black, -1px 1px 0 black, 2px 2px 0 black;
 
   animation-name: flyInFromLeft;
-  animation-duration: 1s;
-  animation-delay: 0.5s;
+  animation-duration: 1.35s;
+  /* animation-delay: 0.5s; */
   animation-fill-mode: forwards;
 }
 .mission-statement {
@@ -22,16 +22,18 @@
   font-family: 'Hammersmith One', sans-serif;
   /* font-family: 'Raleway', sans-serif; */
   padding-top: 75px;
+  padding-bottom: 50px;
   font-size: 34px;
   color: white;
   text-shadow: -1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 3px 3px 0 black;
 
   animation-name: flyInFromRight;
-  animation-duration: 1s;
-  animation-delay: 0.5s;
+  animation-duration: 1.35s;
+  /* animation-delay: 0.5s; */
   animation-fill-mode: forwards;
-}
+} 
 
+/* animations  */
 @keyframes flyInFromLeft {
   from {
     transform: translateX(-100%);
@@ -48,4 +50,16 @@
   to {
     transform: translateX(0);
   }
+}
+
+/* border between images  */
+.whitespace-border {
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.whitespace-text {
+  font-size: 24px;
+  font-weight: bold;
 }

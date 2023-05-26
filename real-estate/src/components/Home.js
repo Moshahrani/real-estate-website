@@ -8,7 +8,7 @@ const Home = () => {
     backgroundSize: "cover",
     backgroundPosition: "center center",
     //   backgroundRepeat: "no-repeat",
-    height: "100vh",
+    // height: "100vh",
     // position: "absolute",
     // width: "100%",
     // height: "100%",
@@ -20,7 +20,7 @@ const Home = () => {
     left: 0,
     height: "100vh",
     width: "100%",
-    backgroundColor: "rgba(0, 0, 0, 0.25)",
+    // backgroundColor: "rgba(0, 0, 0, 0.25)",
     zIndex: 1,
   };
 

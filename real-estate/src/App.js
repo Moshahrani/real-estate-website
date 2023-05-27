@@ -23,7 +23,7 @@ const App = () => {
             element={
               <>
                 <Home />
-                <Contact />
+                {/* <Contact /> */}
               </>
             }
           />
@@ -63,7 +63,6 @@ const App = () => {
           />
         </Routes>
         <div className="d-none d-lg-block"></div>
-        {/* <Associations /> */}
         <SocialLinks />
       </div>
     </Router>

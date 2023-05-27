@@ -10,15 +10,22 @@ const Featured = () => {
       </div>
       <div className="city-grid">
         <div className="city-item">
-          <img src={SF} alt="City 1" />
-          <h2>San Francisco</h2>
-          <p>city description</p>
+          <div className="image-container">
+            <img src={SF} alt="City 1" />
+            <h2>San Francisco</h2>
+          </div>
+          <div className="description">
+            <p>
+              San Francisco, a picturesque city in Northern California, is
+              encompassed by the Pacific Ocean and San Francisco Bay. It comprises
+              a variety of neighborhoods, each possessing its own distinct
+              character. San Francisco attracts a multicultural population from
+              around the world, enticed by its thriving industries, vibrant
+              culinary and cultural scene, and breathtaking landscapes.
+            </p>
+          </div>
         </div>
       </div>
-      {/* <div className="sanfran">San Francisco</div>
-      <div className="silicon">Silicon Valley</div>
-      <div className="eastBay">East Bay</div>
-      <div className="triValley">Tri-Valley</div> */}
     </div>
   );
 };

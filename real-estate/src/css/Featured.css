@@ -35,38 +35,54 @@
 
 .city-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
+    grid-template-columns: 1fr 1fr; 
+    /* align-items: center */
   }
   
   .city-item {
     position: relative;
-    text-align: center;
+    display: flex;
   }
-
-  .city-item h2 {
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .image-container h2 {
     position: absolute;
     top: 25%;
     left: 100%;
     transform: translate(-50%, -50%); 
     color: #fff;
     text-shadow: 4px 4px 12px rgba(0, 0, 0, .9); 
-    text-align: left;
+    text-align: center;
     font-size: 80px;
     font-family: Oswald;
     margin-top: 10px;
   }
-
-  .city-item img {
-    display: block;
+  
+  .image-container img {
     height: 450px;
     width: 650px;
     padding: 15px;
     opacity: 1;
-    /* object-fit: cover; */ 
-    opacity: 1;
     filter: brightness(80%); 
-   
+  }
+  
+
+  .description {
+    font-size: 18px;
+    padding-left: 20px;
+    width: 450px;
+    height: 300px; 
+    /* overflow: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:left;
+    margin-top: 200px;
+    margin-left: 150px;
   }
   
   @media screen and (max-width: 767px) {

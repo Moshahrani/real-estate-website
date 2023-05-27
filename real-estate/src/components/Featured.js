@@ -11,6 +11,7 @@ const Featured = () => {
       <div className="city-grid">
         <div className="city-item">
           <div className="image-container">
+          <div className="background"></div>
             <img src={SF} alt="City 1" />
             <h2>San Francisco</h2>
           </div>

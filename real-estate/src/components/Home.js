@@ -1,5 +1,6 @@
 import cococounty from "../media/cococounty.jpeg";
 import "../css/Home.css";
+import Featured from "./Featured";
 import Associations from "./Associations";
 import personal1 from "../media/personal1.jpg";
 
@@ -55,7 +56,11 @@ const Home = () => {
         <div className="whitespace-text"></div>
       </div>
     </div>
-      <div style={personal}></div>
+      <div className="personal-image" style={personal}></div>
+      <div >
+
+      </div>
+      <Featured />
       <Associations />
     </div>
   );

@@ -1,6 +1,7 @@
 import cococounty from "../media/cococounty.jpeg";
 import "../css/Home.css";
 import Featured from "./Featured";
+import Quotes from "./Quotes";
 import Associations from "./Associations";
 import personal1 from "../media/personal1.jpg";
 
@@ -19,8 +20,8 @@ const Home = () => {
 
   const personal = {
     backgroundImage: `url(${personal1})`,
-     height: "800px",
-     maxWidth: "600px"
+    height: "800px",
+    maxWidth: "600px",
   };
   const overlayStyles = {
     position: "absolute",
@@ -38,7 +39,7 @@ const Home = () => {
   };
 
   return (
-    <div >
+    <div>
       <div style={styles}>
         <div className="opening-statement" style={{ position: "relative" }}>
           {/* <div style={overlayStyles}></div> */}
@@ -52,13 +53,27 @@ const Home = () => {
         </div>
       </div>
       <div className="whitespace-container">
-      <div className="whitespace-border">
-        <div className="whitespace-text"></div>
+        <div className="whitespace-border">
+          <div className="whitespace-text"></div>
+        </div>
       </div>
-    </div>
-      <div className="personal-image" style={personal}></div>
-      <div >
-
+      <div className="image-quotes-container">
+  <div className="left-quote">
+    <h2 className="quote">"Unlocking Your Dreams, One Home at a Time"</h2>
+    <br />
+    <h2 className="quote">"Your Trusted Advisor for Buying and Selling Homes in the Bay Area"</h2>
+  </div>
+  <img className="personal-image" src={personal1} alt="Personal" />
+  <div className="right-quote">
+    <h2 className="quote">"Empowering First-Time Homebuyers and Streamlining the Selling Process"</h2>
+    <br />
+    <h2 className="quote">"Experience, Knowledge, and Passion: Your Perfect Match in Real Estate"</h2>
+  </div>
+</div>
+      <div className="whitespace-container">
+        <div className="whitespace-border">
+          <div className="whitespace-text"></div>
+        </div>
       </div>
       <Featured />
       <Associations />

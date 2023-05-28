@@ -68,11 +68,54 @@
   font-size: 24px;
   font-weight: bold;
 }
+/* -------- images & quotes  */
+
+.image-quotes-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(55, 55, 55);
+}
+
+.left-quote,
+.right-quote {
+  flex: 1;
+  text-align: center;
+}
+
+.quote {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding: 5px;
+  animation: float 7s ease-in-out infinite;
+}
+/* ---- quote animation */
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .quote {
+    display: none;
+  }
+}
 
 .personal-image {
   animation: fadeIn 2s ease-in-out;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
-
 /* personal image animation */
 @keyframes fadeIn {
   0% {
@@ -82,3 +125,5 @@
     opacity: 1;
   }
 }
+
+/* --------------- */

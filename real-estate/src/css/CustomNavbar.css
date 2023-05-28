@@ -43,8 +43,8 @@
 
 
 @media (max-width: 992px) {
-  .custom-logo,
-  .personal-logo {
+  .custom-logo
+   {
     display: none;
   }
 }

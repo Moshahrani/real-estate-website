@@ -37,14 +37,15 @@
 .city-grid {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: 1fr 1fr;
-  /* align-items: center */
-  padding-bottom: 50px;
+  grid-template-columns: 1fr;
+  /* max-width: 750px; */
+  width: 100%;
+  margin: 0 auto;
 }
-
 .city-item {
   position: relative;
   display: flex;
+  margin-bottom: 50px;
 }
 
 .image-container {
@@ -64,40 +65,57 @@
   font-size: 80px;
   font-family: Oswald;
   margin-top: 10px;
+  padding-right: 40px;
 }
 
 .image-container img {
-  height: 450px;
-  width: 650px;
+  /* width: 100%; */
+  height: auto;
   padding: 15px;
   opacity: 1;
   filter: brightness(80%);
 }
 
 .background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 500px;
-    width: 600px; 
-    background-color: #f0f0f0;
-    z-index: -1;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 600px;
+  background-color: lightgray;
+  z-index: -1;
+}
 
 .description {
   font-size: 18px;
-  width: 500px;
-  height: 200px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  /* width: 450px;
+  height: 200px; */
   /* overflow: auto; */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: left;
   margin-top: 275px;
-  margin-left: 150px;
+  margin-left: 90px;
+  margin-right: 10px;
+  padding-right: 20px;
 }
 
 @media screen and (max-width: 767px) {
+  .featuredText {
+    font-family: Oswald;
+    padding: 5px;
+    margin-bottom: 40px;
+  }
+  .featuredSecond::after {
+    border-bottom: 1px solid grey;
+    width: 180px;
+    left: 160px;
+    bottom: -7px;
+  }
+
   .city-grid {
     grid-template-columns: 1fr;
   }
@@ -105,6 +123,7 @@
   .city-item {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
 
@@ -117,8 +136,42 @@
     padding: 10px;
   }
 
-  .city-item img {
-    width: 100%;
+  .image-container {
+    /* position: relative; */
+    padding: 0;
+    margin-right: 0px;
+  }
+  .image-container img {
+    /* height: 450px;
+    width: 650px; */
+    padding: 0;
+    max-width: 90%;
+    /* opacity: 1;
+    filter: brightness(80%); */
+    margin-bottom: 10px;
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
     height: auto;
+    width: 80%;
+    background-color: #f0f0f0;
+    z-index: -1;
+  }
+
+  .description {
+    font-size: 18px;
+    width: auto;
+    max-width: 70%;
+    height: auto;
+    max-height: 400px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 0;
   }
 }
+
+/* ------------------------------
+Reversed grid section */

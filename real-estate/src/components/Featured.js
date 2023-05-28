@@ -1,28 +1,100 @@
 import "../css/Featured.css";
-import SF from "../media/SF2.jpg";
+// import SF from "../media/SF2.jpg";
+// import SV from "../media/SV.jpg";
+// import TV from "../media/TV.png";
+// import EB from "../media/EB.jpg";
+import SF2 from "../media/SF2sized.jpg";
+import SV2 from "../media/SVsized.jpg";
+import TV2 from "../media/TVsized.png";
+import EB2 from "../media/EBsized.jpg";
 
 const Featured = () => {
   return (
-    <div className="feature-container">
-      <div className="featuredText">
-        <div className="featuredFirst"> Featured </div>
-        <div className="featuredSecond">Communities</div>
+    <div>
+      <div className="feature-container">
+        <div className="featuredText">
+          <div className="featuredFirst"> Featured </div>
+          <div className="featuredSecond">Communities</div>
+        </div>
       </div>
       <div className="city-grid">
         <div className="city-item">
           <div className="image-container">
-          <div className="background"></div>
-            <img src={SF} alt="City 1" />
+            <div className="background"></div>
+            <img src={SF2} alt="City 1" />
             <h2>San Francisco</h2>
           </div>
           <div className="description">
             <p>
               San Francisco, a picturesque city in Northern California, is
-              encompassed by the Pacific Ocean and San Francisco Bay. It comprises
-              a variety of neighborhoods, each possessing its own distinct
-              character. San Francisco attracts a multicultural population from
-              around the world, enticed by its thriving industries, vibrant
-              culinary and cultural scene, and breathtaking landscapes.
+              encompassed by the Pacific Ocean and San Francisco Bay. It
+              comprises a variety of neighborhoods, each possessing its own
+              distinct character. San Francisco attracts a multicultural
+              population from around the world, enticed by its thriving
+              industries, vibrant culinary and cultural scene, and breathtaking
+              landscapes.
+            </p>
+          </div>
+        </div>
+        <div className="city-item">
+          <div className="image-container">
+            <div className="background"></div>
+            <img src={SV2} alt="City 2" />
+            <h2>Silicon Valley</h2>
+          </div>
+          <div className="description">
+            <p>
+              Silicon Valley, located in the southern region of California's San
+              Francisco Bay Area, is a hotspot for technology start-ups,
+              international tech firms, and tech-centric institutions. It is a
+              magnet for the brightest talents in the tech industry and serves
+              as a dynamic center for venture capital and innovative incubators
+              that are driving global change. The real estate market in Silicon
+              Valley is thriving and evolving at a rapid pace, mirroring the
+              swift progress of the tech companies it houses.
+            </p>
+          </div>
+        </div>
+        <div className="city-item">
+          <div className="image-container">
+            <div className="background"></div>
+            <img src={TV2} alt="City 3" />
+            <h2>Tri-Valley</h2>
+          </div>
+          <div className="description">
+            <p>
+              The Tri-Valley, located in the eastern part of the San Francisco
+              Bay Area, lies between Oakland and San Francisco. It encompasses
+              several cities such as San Ramon, Danville, Alamo, Blackhawk,
+              Pleasanton, Livermore, Dublin, and Diablo. The region is renowned
+              for its pleasant Mediterranean climate, picturesque vineyards,
+              abundant parks and recreational facilities, and upscale dining
+              options. With a population of approximately 360,000, the
+              Tri-Valley is home to many long-established families. It offers
+              more affordable and secluded living options compared to the
+              bustling cities of San Francisco and San Jose, with smaller,
+              close-knit communities and schools.
+            </p>
+          </div>
+        </div>
+        <div className="city-item">
+          <div className="image-container">
+            <div className="background"></div>
+            <img src={EB2} alt="City 4" />
+            <h2>East Bay</h2>
+          </div>
+          <div className="description">
+            <p>
+              The East Bay comprises various neighborhoods located in Alameda
+              and Contra Costa Counties, offering stunning vistas of the Bay
+              Area. Unwind in one of the numerous unique residences nestled
+              among the forested hills of Oakland. Alternatively, explore the
+              dynamic city of Walnut Creek, known for its acclaimed dining
+              establishments, premier shopping destinations, bustling theater
+              district, and top-notch educational institutions. Regardless of
+              which city you find yourself in within the East Bay, rest assured
+              that there is a wealth of activities and destinations suitable for
+              individuals of all ages.
             </p>
           </div>
         </div>
@@ -32,3 +104,24 @@ const Featured = () => {
 };
 
 export default Featured;
+
+{
+  /* <div className="city-item-reverse">
+          <div className="description-reverse">
+            <h2>New York City</h2>
+            <p>
+              New York City, the bustling metropolis of the United States, is
+              known for its iconic skyline, diverse neighborhoods, and vibrant
+              culture. The city offers a wide range of attractions, from
+              world-class museums and theaters to renowned restaurants and
+              shopping destinations. Visitors and residents alike are drawn to
+              the energy and dynamism that New York City has to offer.
+            </p>
+          </div>
+          <div className="image-container-reverse">
+            <div className="background-reverse"></div>
+            <img src="" alt="City 2" />
+          </div>
+        </div>
+</div> */
+}

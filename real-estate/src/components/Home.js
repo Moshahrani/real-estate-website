@@ -58,18 +58,8 @@ const Home = () => {
         </div>
       </div>
       <div className="image-quotes-container">
-  <div className="left-quote">
-    <h2 className="quote">"Unlocking Your Dreams, One Home at a Time"</h2>
-    <br />
-    <h2 className="quote">"Your Trusted Advisor for Buying and Selling Homes in the Bay Area"</h2>
-  </div>
-  <img className="personal-image" src={personal1} alt="Personal" />
-  <div className="right-quote">
-    <h2 className="quote">"Empowering First-Time Homebuyers and Streamlining the Selling Process"</h2>
-    <br />
-    <h2 className="quote">"Experience, Knowledge, and Passion: Your Perfect Match in Real Estate"</h2>
-  </div>
-</div>
+        <img className="personal-image" src={personal1} alt="Personal" />
+      </div>
       <div className="whitespace-container">
         <div className="whitespace-border">
           <div className="whitespace-text"></div>
@@ -82,3 +72,15 @@ const Home = () => {
 };
 
 export default Home;
+
+// {/* <div className="left-quote">
+//     <h2 className="quote">"Unlocking Your Dreams, One Home at a Time"</h2>
+//     <br />
+//     <h2 className="quote">"Your Trusted Advisor for Buying and Selling Homes in the Bay Area"</h2>
+//   </div> */}
+//   <img className="personal-image" src={personal1} alt="Personal" />
+//   {/* <div className="right-quote">
+//     <h2 className="quote">"Empowering First-Time Homebuyers and Streamlining the Selling Process"</h2>
+//     <br />
+//     <h2 className="quote">"Experience, Knowledge, and Passion: Your Perfect Match in Real Estate"</h2>
+//   </div> */}

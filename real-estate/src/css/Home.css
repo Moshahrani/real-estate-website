@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Hammersmith+One');
+body {
+  background: linear-gradient(to bottom, #759CC9 20%, #ffffff 25%, #759CC9 50%, #ffffff 75%, #759CC9 100%);
+  /* background: radial-gradient(circle at center, #54ADD6, #E0DAE3);
+  background: -webkit-radial-gradient(circle at center, #54ADD6, #E0DAE3);
+  background: -moz-radial-gradient(circle at center, #54ADD6, #E0DAE3); */
+}
+
 
 .statement {
   padding-top: 50px;
-  font-family: 'Oswald', sans-serif;
+  /* font-family: 'Oswald', sans-serif; */
   /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
   /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   /* font-family: 'Hammersmith One', sans-serif; */
@@ -11,12 +18,17 @@
   text-align: center;
   color: white;
   /* opacity: .7; */
-  text-shadow: -2px 2px 0 black, 1px -1px 0 black, -1px 1px 0 black, 2px 2px 0 black;
+  /* text-shadow: -2px 2px 0 black, 1px -1px 0 black, -1px 1px 0 black, 2px 2px 0 black; */
 
   animation-name: flyInFromLeft;
   animation-duration: 1.35s;
   /* animation-delay: 0.5s; */
   animation-fill-mode: forwards;
+
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 2px; /* Increase letter spacing */
+  text-transform: uppercase; /* Transform text to uppercase */
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
 }
 .mission-statement {
   text-align: center;
@@ -30,7 +42,8 @@
   padding-bottom: 50px;
   font-size: 34px;
   color: white;
-  text-shadow: -1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 3px 3px 0 black;
+  /* text-shadow: -1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 3px 3px 0 black; */
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8); 
 
   animation-name: flyInFromRight;
   animation-duration: 1.35s;
@@ -75,9 +88,14 @@
   align-items: center;
   justify-content: center;
   color: rgb(55, 55, 55);
+  background-image: url(/src/media/BB.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
 }
 
-.left-quote,
+
+/* .left-quote,
 .right-quote {
   flex: 1;
   text-align: center;
@@ -87,10 +105,9 @@
   margin-top: 50px;
   margin-bottom: 20px;
   padding: 5px;
-  animation: float 7s ease-in-out infinite;
-}
+  /* animation: float 7s ease-in-out infinite; */
 /* ---- quote animation */
-
+/* 
 @keyframes float {
   0% {
     transform: translateY(0);
@@ -101,7 +118,7 @@
   100% {
     transform: translateY(0);
   }
-}
+} */
 
 @media screen and (max-width: 767px) {
   .quote {

@@ -72,7 +72,7 @@ body {
 
 /* border between images  */
 .whitespace-border {
-  border: 2px solid black;
+  
   padding: 10px;
   text-align: center;
 }
@@ -85,10 +85,10 @@ body {
 
 .image-quotes-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   color: rgb(55, 55, 55);
-  background-image: url(/src/media/BB.jpg);
+  /* background-image: url(/src/media/sanfran.jpg); */
   background-size: cover;
   background-position: center;
   z-index: -1;

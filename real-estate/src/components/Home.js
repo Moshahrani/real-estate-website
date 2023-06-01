@@ -1,9 +1,9 @@
 import cococounty from "../media/cococounty.jpeg";
 import "../css/Home.css";
 import Featured from "./Featured";
-import Quotes from "./Quotes";
 import Associations from "./Associations";
 import personal1 from "../media/personal1.jpg";
+import CustomCarousel from "./Carousel";
 
 const Home = () => {
   const styles = {
@@ -57,14 +57,15 @@ const Home = () => {
           <div className="whitespace-text"></div>
         </div>
       </div>
-      <div className="image-quotes-container">
+      <CustomCarousel />
+      {/* <div className="image-quotes-container">
         <img className="personal-image" src={personal1} alt="Personal" />
-      </div>
-      <div className="whitespace-container">
+      </div> */}
+      {/* <div className="whitespace-container">
         <div className="whitespace-border">
           <div className="whitespace-text"></div>
         </div>
-      </div>
+      </div> */}
       <Featured />
       <Associations />
     </div>

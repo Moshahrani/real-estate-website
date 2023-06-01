@@ -22,13 +22,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #6b92b5; */
-    /* background-color: #7b9ebd */
-    background-color: #9cb6ce;
+    background-color: #6b92b5;
+    /* background-color: #7b9ebd;
+    background-color: #9cb6ce; */
   }
   .custom-carousel {
-    /* width: 70%; 
-    height: 70%;  */
+    width: 70%; 
+    height: 70%;  
     max-width: 400px;
     max-height: 700px;
     margin: auto;

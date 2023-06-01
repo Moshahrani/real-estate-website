@@ -23,35 +23,35 @@ const CustomCarousel = () => {
         <img
           className="d-block w-100 custom-carousel-img"
           src={house7}
-          alt="Third slide"
+          alt="house image"
         />
       </Carousel.Item>
       <Carousel.Item className="custom-carousel-item">
         <img
           className="d-block w-100 custom-carousel-img"
           src={house3}
-          alt="First slide"
+          alt="house image "
         />
       </Carousel.Item>
       <Carousel.Item className="custom-carousel-item">
         <img
           className="d-block w-100 custom-carousel-img"
           src={house4}
-          alt="Second slide"
+          alt="house image"
         />
       </Carousel.Item>
       <Carousel.Item className="custom-carousel-item">
         <img
           className="d-block w-100 custom-carousel-img"
           src={house5}
-          alt="Third slide"
+          alt="house image"
         />
       </Carousel.Item>
       <Carousel.Item className="custom-carousel-item">
         <img
           className="d-block w-100 custom-carousel-img"
           src={house6}
-          alt="Third slide"
+          alt="house image"
         />
       </Carousel.Item>
       

@@ -1,18 +1,19 @@
-import cococounty from "../media/cococounty.jpeg";
+// import cococounty from "../media/cococounty.jpeg";
 import "../css/Home.css";
 import Featured from "./Featured";
 import Associations from "./Associations";
 import personal1 from "../media/personal1.jpg";
 import CustomCarousel from "./Carousel";
 import AboutMe from "./AboutMe";
-
+import Steps from "./Steps";
+import city from "../media/city.gif";
 const Home = () => {
   const styles = {
-    backgroundImage: `url(${cococounty})`,
+    backgroundImage: `url(${city})`,
     backgroundSize: "cover",
     backgroundPosition: "center center",
     //   backgroundRepeat: "no-repeat",
-    // height: "100vh",
+    height: "75vh",
     // position: "absolute",
     // width: "100%",
     // height: "100%",
@@ -68,6 +69,8 @@ const Home = () => {
         </div>
       </div> */}
       <AboutMe />
+      <div className="border-line"></div>
+      <Steps />
       <Featured />
       <Associations />
     </div>

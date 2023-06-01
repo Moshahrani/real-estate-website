@@ -17,47 +17,46 @@ const CustomCarousel = () => {
   return (
     <div className="image-modal-container">
       <img src={personal1} alt="" className="side-image" />
-      <div className="modal-content">
-    <Carousel className="custom-carousel">
-    <Carousel.Item className="custom-carousel-item">
-        <img
-          className="d-block w-100 custom-carousel-img"
-          src={house7}
-          alt="house image"
-        />
-      </Carousel.Item>
-      <Carousel.Item className="custom-carousel-item">
-        <img
-          className="d-block w-100 custom-carousel-img"
-          src={house3}
-          alt="house image "
-        />
-      </Carousel.Item>
-      <Carousel.Item className="custom-carousel-item">
-        <img
-          className="d-block w-100 custom-carousel-img"
-          src={house4}
-          alt="house image"
-        />
-      </Carousel.Item>
-      <Carousel.Item className="custom-carousel-item">
-        <img
-          className="d-block w-100 custom-carousel-img"
-          src={house5}
-          alt="house image"
-        />
-      </Carousel.Item>
-      <Carousel.Item className="custom-carousel-item">
-        <img
-          className="d-block w-100 custom-carousel-img"
-          src={house6}
-          alt="house image"
-        />
-      </Carousel.Item>
-      
-    </Carousel>
-  </div>
-</div>
+      <div className="carousel-content">
+        <Carousel className="custom-carousel">
+          <Carousel.Item className="custom-carousel-item">
+            <img
+              className="d-block w-100 custom-carousel-img"
+              src={house7}
+              alt="house image"
+            />
+          </Carousel.Item>
+          <Carousel.Item className="custom-carousel-item">
+            <img
+              className="d-block w-100 custom-carousel-img"
+              src={house3}
+              alt="house image "
+            />
+          </Carousel.Item>
+          <Carousel.Item className="custom-carousel-item">
+            <img
+              className="d-block w-100 custom-carousel-img"
+              src={house4}
+              alt="house image"
+            />
+          </Carousel.Item>
+          <Carousel.Item className="custom-carousel-item">
+            <img
+              className="d-block w-100 custom-carousel-img"
+              src={house5}
+              alt="house image"
+            />
+          </Carousel.Item>
+          <Carousel.Item className="custom-carousel-item">
+            <img
+              className="d-block w-100 custom-carousel-img"
+              src={house6}
+              alt="house image"
+            />
+          </Carousel.Item>
+        </Carousel>
+      </div>
+    </div>
   );
 };
 

@@ -1,3 +1,8 @@
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 .image-modal-container {
     padding-left: 5%;
     padding-right: 5%;
@@ -8,6 +13,7 @@
     margin: auto;
     overflow: hidden;
     position: relative;
+    animation: fadeIn 3s ease-in-out;
   }
   
   .side-image {
@@ -53,6 +59,8 @@
     object-fit: cover;
   }
   
+/* ---- mobile views  */
+
 
   @media screen and (max-width: 767px) {
     .image-modal-container {
@@ -60,7 +68,8 @@
       height: auto;
     }
   
-    .side-image, .modal-content {
+    .side-image, .carousel-content {
       width: 100%;
+
     }
   }

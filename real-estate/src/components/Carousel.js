@@ -15,7 +15,7 @@ import house7 from "../media/house7.webp";
 
 const CustomCarousel = () => {
   return (
-    <div className="image-modal-container">
+    <div className="image-carousel-container">
       <img src={personal1} alt="" className="side-image" />
       <div className="carousel-content">
         <Carousel className="custom-carousel">

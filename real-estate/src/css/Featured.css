@@ -176,5 +176,15 @@
 
 }
 
-/* ------------------------------
-Reversed grid section */
+/* ------- city animations  */
+
+.city-item {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 2s, transform 2s;
+}
+
+.city-item.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}

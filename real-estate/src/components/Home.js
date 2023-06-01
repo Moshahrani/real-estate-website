@@ -4,7 +4,6 @@ import Featured from "./Featured";
 import Associations from "./Associations";
 import personal1 from "../media/personal1.jpg";
 import CustomCarousel from "./Carousel";
-
 const Home = () => {
   const styles = {
     backgroundImage: `url(${cococounty})`,

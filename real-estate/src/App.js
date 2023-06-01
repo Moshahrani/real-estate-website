@@ -10,7 +10,7 @@ import SocialLinks from "./components/SocialLinks";
 import MoreInfo from "./components/MoreInfo";
 import Houses from "./components/Houses";
 import HouseList from "./components/HouseList";
-// import Associations from "./Associations";
+import "./App.css";
 
 const App = () => {
   return (

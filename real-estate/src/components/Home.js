@@ -4,6 +4,8 @@ import Featured from "./Featured";
 import Associations from "./Associations";
 import personal1 from "../media/personal1.jpg";
 import CustomCarousel from "./Carousel";
+import AboutMe from "./AboutMe";
+
 const Home = () => {
   const styles = {
     backgroundImage: `url(${cococounty})`,
@@ -65,6 +67,7 @@ const Home = () => {
           <div className="whitespace-text"></div>
         </div>
       </div> */}
+      <AboutMe />
       <Featured />
       <Associations />
     </div>

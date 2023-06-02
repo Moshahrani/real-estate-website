@@ -97,38 +97,6 @@
   z-index: -1;
 }
 
-
-/* .left-quote,
-.right-quote {
-  flex: 1;
-  text-align: center;
-}
-
-.quote {
-  margin-top: 50px;
-  margin-bottom: 20px;
-  padding: 5px;
-  /* animation: float 7s ease-in-out infinite; */
-/* ---- quote animation */
-/* 
-@keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-60px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-} */
-/* @media (max-width: 768px) {
-  body {
-    background: linear-gradient(to bottom, white 52%, #ffffff 25%, #759CC9 50%, #ffffff 75%, #759CC9 100%)
-  }
-} */
-
-
 @media screen and (max-width: 767px) {
   .quote {
     display: none;

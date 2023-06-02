@@ -2,49 +2,44 @@
 import "../css/Home.css";
 import Featured from "./Featured";
 import Associations from "./Associations";
-import personal1 from "../media/personal1.jpg";
+// import personal1 from "../media/personal1.jpg";
 import CustomCarousel from "./Carousel";
 import AboutMe from "./AboutMe";
 import Steps from "./Steps";
 import BayBridge from "../media/BayBridge.mp4";
 
 const Home = () => {
-  
-  const styles = {
-    backgroundImage: `url(${BayBridge})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center center",
-    //   backgroundRepeat: "no-repeat",
-    height: "90vh",
-    // position: "absolute",
-    // width: "100%",
-    // height: "100%",
-    zIndex: 1,
-  };
-
-  const personal = {
-    backgroundImage: `url(${personal1})`,
-    height: "800px",
-    maxWidth: "600px",
-  };
-  const overlayStyles = {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    height: "100vh",
-    width: "100%",
-    // backgroundColor: "rgba(0, 0, 0, 0.25)",
-    zIndex: 1,
-  };
 
   const contentStyles = {
     position: "relative",
     zIndex: 2,
   };
 
+  const styles = {
+    position: 'relative',
+    overflow: 'hidden',
+    height: '90vh',
+  };
+  
+  const videoStyles = {
+    position: 'absolute',
+    width: '100%',
+    left: '50%',
+    top: '50%',
+    height: '100%',
+    objectFit: 'cover',
+    transform: 'translate(-50%, -50%)',
+    zIndex: '-1',
+  };
+
   return (
     <div>
+      {/* <div style={styles}> */}
       <div style={styles}>
+  <video autoPlay loop muted style={videoStyles}>
+    <source src={BayBridge} type="video/mp4" />
+  </video>
+
         <div className="opening-statement" style={{ position: "relative" }}>
           {/* <div style={overlayStyles}></div> */}
           <div style={contentStyles}>
@@ -77,6 +72,7 @@ const Home = () => {
       <Featured />
       <Associations />
     </div>
+    
   );
 };
 

@@ -1,3 +1,7 @@
+.feature-container {
+  padding-top: 30px;
+  margin-top: 30px;
+}
 .featuredText {
   font-family: Oswald;
   padding: 20px;
@@ -42,6 +46,8 @@
   /* max-width: 750px; */
   width: 100%;
   margin: 0 auto;
+  background: linear-gradient(to bottom, #759CC9 0%, #ffffff 25%, #759CC9 50%, #ffffff 75%, #759CC9 100%);
+  /* background: linear-gradient(to bottom, white 40%, #ffffff 40%, #759CC9 50%, #ffffff 75%, #759CC9 100%); */
 }
 .city-item {
   position: relative;

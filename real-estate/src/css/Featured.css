@@ -106,15 +106,20 @@
 }
 
 @media screen and (max-width: 767px) {
-  .featuredText {
+
+    .featuredText {
     font-family: Oswald;
-    padding: 5px;
     margin-bottom: 40px;
+    font-family: Oswald;
+    /* padding: 2px; */
+    margin-left: -10px;  /* Negative margin to pull the text to the left */
   }
+  
+
   .featuredSecond::after {
     border-bottom: 1px solid grey;
-    width: 180px;
-    left: 160px;
+    margin-left: -10px;
+    width: 0;
     bottom: -7px;
   }
 

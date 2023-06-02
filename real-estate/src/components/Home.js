@@ -73,6 +73,7 @@ const Home = () => {
       <AboutMe />
       <div className="border-line"></div>
       <Steps />
+      <div className="border-line"></div>
       <Featured />
       <Associations />
     </div>

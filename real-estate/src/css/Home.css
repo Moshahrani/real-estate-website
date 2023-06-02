@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Hammersmith+One');
-body {
+/* body {
   background: linear-gradient(to bottom, white 47%, #ffffff 25%, #759CC9 50%, #ffffff 75%, #759CC9 100%);
-}
+} */
 
 .statement {
   padding-top: 50px;
@@ -82,6 +82,7 @@ body {
     max-width: 70%;
     border-bottom: 8px solid #6b92b5;
     margin: 15px auto;
+    
 }
 /* -------- images & quotes  */
 
@@ -121,11 +122,11 @@ body {
     transform: translateY(0);
   }
 } */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   body {
     background: linear-gradient(to bottom, white 52%, #ffffff 25%, #759CC9 50%, #ffffff 75%, #759CC9 100%)
   }
-}
+} */
 
 
 @media screen and (max-width: 767px) {

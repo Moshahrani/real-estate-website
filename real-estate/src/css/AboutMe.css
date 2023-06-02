@@ -61,12 +61,12 @@
     .aboutme-container {
       flex-direction: column;
       margin: auto;
-      padding: 50px 0; 
+      /* padding: 4px 4px 20px 4px;  */
     }
     .featuredSecond::after {
         border-bottom: 1px solid black;
-        width: 150px;
-        left: 160px;
+        width: 80px;
+        left: 140px;
         bottom: -7px;
       }
   }

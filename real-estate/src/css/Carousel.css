@@ -64,13 +64,16 @@
 
 
   @media screen and (max-width: 767px) {
-    .image-modal-container {
+    .image-carousel-container {
+      /* display: none; */
       flex-direction: column;
       height: auto;
+      margin-top: -5px;
+      margin-bottom: -10px;
+      padding: 0;
     }
   
     .side-image, .carousel-content {
       width: 100%;
-
     }
   }

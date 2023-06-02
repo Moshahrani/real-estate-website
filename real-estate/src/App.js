@@ -35,14 +35,14 @@ const App = () => {
               </HouseList>
             }
           />
-          <Route
+          {/* <Route
             path="/moreInfo"
             element={
               <>
                 <MoreInfo />
               </>
             }
-          />
+          /> */}
           <Route
             path="/about"
             element={

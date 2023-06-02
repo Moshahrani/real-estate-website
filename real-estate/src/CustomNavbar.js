@@ -48,9 +48,9 @@ const CustomNavbar = () => {
           <Nav.Link as={Link} to="/houses" onClick={() => setExpanded(false)}>
             Houses
           </Nav.Link>
-          <Nav.Link as={Link} to="/moreInfo" onClick={() => setExpanded(false)}>
+          {/* <Nav.Link as={Link} to="/moreInfo" onClick={() => setExpanded(false)}>
             More Info
-          </Nav.Link>
+          </Nav.Link> */}
           <Nav.Link as={Link} to="/about" onClick={() => setExpanded(false)}>
             About
           </Nav.Link>

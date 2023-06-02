@@ -1,13 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Hammersmith+One');
 body {
   background: linear-gradient(to bottom, white 47%, #ffffff 25%, #759CC9 50%, #ffffff 75%, #759CC9 100%);
-  /* background: radial-gradient(circle at center, #54ADD6, #E0DAE3);
-  background: -webkit-radial-gradient(circle at center, #54ADD6, #E0DAE3);
-  background: -moz-radial-gradient(circle at center, #54ADD6, #E0DAE3); */
-  /* z-index: 1; */
-
 }
-
 
 .statement {
   padding-top: 50px;
@@ -127,6 +121,12 @@ body {
     transform: translateY(0);
   }
 } */
+@media (max-width: 768px) {
+  body {
+    background: linear-gradient(to bottom, white 52%, #ffffff 25%, #759CC9 50%, #ffffff 75%, #759CC9 100%)
+  }
+}
+
 
 @media screen and (max-width: 767px) {
   .quote {

@@ -6,14 +6,16 @@ import personal1 from "../media/personal1.jpg";
 import CustomCarousel from "./Carousel";
 import AboutMe from "./AboutMe";
 import Steps from "./Steps";
-import city from "../media/city.gif";
+import BayBridge from "../media/BayBridge.mp4";
+
 const Home = () => {
+  
   const styles = {
-    backgroundImage: `url(${city})`,
+    backgroundImage: `url(${BayBridge})`,
     backgroundSize: "cover",
     backgroundPosition: "center center",
     //   backgroundRepeat: "no-repeat",
-    height: "75vh",
+    height: "90vh",
     // position: "absolute",
     // width: "100%",
     // height: "100%",

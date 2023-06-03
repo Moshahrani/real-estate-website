@@ -13,8 +13,7 @@
   font-size: 75px;
   text-align: center;
   color: white;
-  /* opacity: .7; */
-  /* text-shadow: -2px 2px 0 black, 1px -1px 0 black, -1px 1px 0 black, 2px 2px 0 black; */
+
 
   animation-name: flyInFromLeft;
   animation-duration: 1.35s;
@@ -31,14 +30,10 @@
   max-width: 800px;
   margin: 0 auto;
   font-family: 'Oswald', sans-serif;
-  /* font-family: Tahoma; */
-  /* font-family: 'Hammersmith One', sans-serif; */
-  /* font-family: 'Raleway', sans-serif; */
   padding-top: 75px;
   padding-bottom: 50px;
   font-size: 34px;
   color: white;
-  /* text-shadow: -1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 3px 3px 0 black; */
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8); 
 
   animation-name: flyInFromRight;

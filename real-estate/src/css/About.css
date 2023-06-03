@@ -1,68 +1,72 @@
-
-@keyframes flyIn {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+.about-page {
+  background-image: url("../media/city.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.image, .bio {
-  animation: flyIn 2s ease-out;
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    /* justify-content: center; */
-    padding-top: 10px;
+.bio-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px  solid black;
+}
+
+.bio-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.bio-container {
+  flex: 2;
+  padding: 10px;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.bio-content p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: white;
+  opacity: none;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Stack the children vertically */
   }
 
-  .image {
-    /* overflow: hidden; */
-    height: 400px;
-    width: 320px;
+  .bio-image-container {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    max-width: 300px;
   }
-  
-  .bio {
-    display: grid;
-    grid-template-columns: 1fr;
-    color: white;
-    font-family: 'Raleway', sans-serif;
+  .bio-container {
+    flex: none;
+    margin-bottom: 40px;
+    max-width: 400px;
   }
-  
-  .bio h2 {
-    grid-column: 1 / 2;
+  .about-page {
+    background-size: cover;
+    background-position: center;
+    position: relative;
   }
-  
-  .bio p {
-    grid-column: 1 / 2;
-  }
-
-  .bio-content {
-    background: rgba(0, 0, 0, 0.35);
-    padding: 10px;
-  }
-
-  @media only screen and (max-width: 768px) {
-    .container {
-      grid-template-columns: 1fr;
-      margin-bottom: 30px;
-    }
-  
-    .image-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: auto;  /* Changed to auto */
-    }
-  
-    .image {
-      width: 100%; /* Changed to 100% to make image responsive */
-      max-width: 320px;
-    }
-  }
-  
+}

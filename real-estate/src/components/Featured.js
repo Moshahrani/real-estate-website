@@ -29,7 +29,7 @@ const CityItem = ({ imgSrc, alt, city, description }) => {
   return (
     <div ref={ref} className={`city-item ${isVisible ? "slide-in" : ""}`}>
       <div className="image-container">
-        <div className="background"></div>
+        {/* <div className="background"></div> */}
         <img src={imgSrc} alt={alt} />
         <h2>{city}</h2>
       </div>
@@ -49,6 +49,7 @@ const Featured = () => {
           <div className="featuredSecond">Communities</div>
         </div>
       </div>
+      <div className="background"></div>
       <div className="city-grid">
         <CityItem
           imgSrc={SF2}

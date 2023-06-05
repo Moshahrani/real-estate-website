@@ -1,12 +1,11 @@
-import Bio from "../media/Bio.png";
 import "../css/AboutMe.css";
 
 const AboutMe = () => {
     return (
       <div className="aboutme-container">
-        <div className="featuredText">
-          <div className="featuredFirst"> </div>
-          <div className="featuredSecond">About Shafiq </div>
+        <div className="aboutMeText">
+          <div className="aboutMeFirst"> </div>
+          <div className="aboutMeSecond">About Shafiq </div>
         </div>
         <div className="aboutText">
           "Born and raised in the vibrant Bay Area, I am a dedicated and

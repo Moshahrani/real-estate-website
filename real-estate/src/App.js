@@ -11,7 +11,7 @@ import MoreInfo from "./components/MoreInfo";
 import Houses from "./components/Houses";
 import HouseList from "./components/HouseList";
 import ScrollToTop from './components/ScrollTop';
-import "./App.css";
+// import "./App.css";
 
 
 const App = () => {

@@ -21,10 +21,11 @@
   animation-fill-mode: forwards;
 
   font-family: 'Oswald', sans-serif;
-  letter-spacing: 2px; /* Increase letter spacing */
-  text-transform: uppercase; /* Transform text to uppercase */
+  letter-spacing: 2px; 
+  text-transform: uppercase; 
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
 }
+
 .mission-statement {
   text-align: center;
   max-width: 800px;
@@ -79,23 +80,50 @@
     margin: 15px auto;
     
 }
-/* -------- images & quotes  */
 
-.image-quotes-container {
-  display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
-  color: rgb(55, 55, 55);
-  /* background-image: url(/src/media/sanfran.jpg); */
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
+.border-container {
+  position: relative;
 }
 
+.border-line2 {
+  width: 100%;
+  border-top: 8px solid #6b92b5;
+}
+
+.border-container::after {
+  content: '';
+  display: block;
+  width: 40%; /* adjust to change the size of the gap */
+  height: 20px; /* should be greater than border thickness */
+  background: white; /* same as parent background color */
+  position: absolute;
+  top: -5px; /* adjust to center vertically over the border */
+  left: 50%; 
+  transform: translateX(-50%);
+}
+
+/* -------- images & quotes  */
+
+
 @media screen and (max-width: 767px) {
-  .quote {
-    display: none;
+  .border-line {
+    width: 70%;
+    border-bottom: 8px solid #6b92b5;
+    margin: 10px auto;
   }
+
+  .border-container::after {
+    content: '';
+    display: block;
+    width: 40%; /* adjust to change the size of the gap */
+    height: 20px; /* should be greater than border thickness */
+    background: white; /* same as parent background color */
+    position: absolute;
+    top: -5px; /* adjust to center vertically over the border */
+    left: 50%; 
+    transform: translateX(-50%);
+  }
+  
 }
 
 .personal-image {
@@ -105,6 +133,7 @@
   max-width: 100%;
   height: auto;
 }
+
 /* personal image animation */
 @keyframes fadeIn {
   0% {

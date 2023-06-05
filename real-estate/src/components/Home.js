@@ -1,15 +1,14 @@
 import React, { useEffect, useRef } from "react";
-// import cococounty from "../media/cococounty.jpeg";
 import "../css/Home.css";
 import Featured from "./Featured";
 import Associations from "./Associations";
-// import personal1 from "../media/personal1.jpg";
 import CustomCarousel from "./Carousel";
 import AboutMe from "./AboutMe";
 import Steps from "./Steps";
 import BayBridge from "../media/BayBridge.mp4";
 
 const Home = () => {
+
   const videoRef = useRef();
   // video should autoplay across all devices and screen sizes
   useEffect(() => {
@@ -17,6 +16,7 @@ const Home = () => {
       videoRef.current.play();
     }
   }, []);
+  
 
   const contentStyles = {
     position: "relative",
@@ -69,6 +69,9 @@ const Home = () => {
         <div className="whitespace-border">
           <div className="whitespace-text"></div>
         </div>
+      </div>
+      <div className="border-container">
+      <div className="border-line2"></div>
       </div>
       <CustomCarousel />
       <AboutMe />

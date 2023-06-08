@@ -10,16 +10,13 @@
   /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   /* font-family: 'Hammersmith One', sans-serif; */
   /* font-family: 'Raleway', sans-serif; */
-  font-size: 75px;
+  font-size: 6.5vw;
   text-align: center;
   color: white;
-
-
   animation-name: flyInFromLeft;
   animation-duration: 1.35s;
   /* animation-delay: 0.5s; */
   animation-fill-mode: forwards;
-
   font-family: 'Oswald', sans-serif;
   letter-spacing: 2px; 
   text-transform: uppercase; 
@@ -28,12 +25,13 @@
 
 .mission-statement {
   text-align: center;
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
   font-family: 'Oswald', sans-serif;
   padding-top: 75px;
   padding-bottom: 50px;
-  font-size: 34px;
+  /* font-size: 34px; */
+  font-size: 3.5vw;
   color: white;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8); 
 

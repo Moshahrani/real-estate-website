@@ -1,4 +1,4 @@
-form {
+/* form {
   max-width: 300px;
   margin: auto;
   padding: 20px;
@@ -22,11 +22,11 @@ form textarea::placeholder {
 .contactForm {
   color: white;
   font-size: 14px;
-}
+} */
 
 
-.background-image {
-  /* position: absolute; */
+/* .background-image {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -36,5 +36,5 @@ form textarea::placeholder {
   justify-content: center;
   align-items: center;
 }
-
+ */
 

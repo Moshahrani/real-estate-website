@@ -1,36 +1,15 @@
 .contact-container {
-    position: static;
-    bottom: 0;
-    left: 30;
-    position: fixed;
-     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start; 
-    padding-bottom: 40px;
-    color: white;
-    z-index: 4;
-  }
-
-  .form-group {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-    color: white;
+    /* Add your custom styles for the Contact component */
+    /* Example styles */
+    background-color: #f2f2f2;
+    padding: 20px;
   }
   
-  .form-group > div {
-    margin-left: 10px;
-    font-size: 16px;
-    width: 150px;
-  }
-
-  .col-md-6 {
-  background: rgba(0, 0, 0, 0.05);
-  }
-
-  @media (max-width: 767px) {
-    .contact-container {
-      display: none;
-    }
+  /* Styles for the ContactForm component */
+  .contact-form {
+    /* Add your custom styles for the ContactForm component */
+    /* Example styles */
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    padding: 10px;
   }

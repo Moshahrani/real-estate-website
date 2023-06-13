@@ -54,6 +54,7 @@ const Home = () => {
         />
           {/* <source src={BayBridge} type="video/mp4" />
         </video> */}
+        <div className="intro-container">
         <div className="opening-statement" style={{ position: "relative" }}>
           {/* <div style={overlayStyles}></div> */}
           <div style={contentStyles}>
@@ -64,6 +65,7 @@ const Home = () => {
             </h2>
           </div>
         </div>
+      </div>
       </div>
       <div className="whitespace-container">
         <div className="whitespace-border">

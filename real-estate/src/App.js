@@ -3,9 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CustomNavbar from "./CustomNavbar";
 import Home from "./components/Home";
 import About from "./components/About";
-import ContactForm from "./components/ContactForm";
 import Contact from "./components/Contact";
-import city from ".//media/city.jpg";
 import SocialLinks from "./components/SocialLinks";
 import MoreInfo from "./components/MoreInfo";
 import Houses from "./components/Houses";
@@ -51,7 +49,6 @@ const App = () => {
             element={
               <>
                 <About />
-                {/* <Contact /> */}
               </>
             }
           />
@@ -59,7 +56,6 @@ const App = () => {
             path="/contact"
             element={
               <>
-                <ContactForm />
                 <Contact />
               </>
             }

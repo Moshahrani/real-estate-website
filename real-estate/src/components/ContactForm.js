@@ -4,7 +4,7 @@ import "../css/ContactForm.css";
 import bayarea from "../media/bayarea.jpg";
 import emailjs from "@emailjs/browser";
 
-const ContactForm = ({ handleModalClose, selectedHouse }) => {
+const ContactForm = ({ handleModalClose, selectedHouse, style }) => {
   const form = useRef();
 
   const [formValues, setFormValues] = useState({
@@ -181,10 +181,10 @@ const ContactForm = ({ handleModalClose, selectedHouse }) => {
             {formErrors.message}
           </Form.Control.Feedback>
         </Form.Group>
-        <div style={{ marginTop: "1rem", marginBottom: "1rem" }}>
+        <div className="address" style={style} >
           <Form.Label>Address: {selectedHouse}</Form.Label>
         </div>
-        <Button variant="primary" type="submit" onClick={handleSubmit}>
+        <Button style={{marginTop: "20px" }}variant="primary" type="submit" onClick={handleSubmit}>
           Submit
         </Button>
       </Form>

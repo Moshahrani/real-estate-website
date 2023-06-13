@@ -38,6 +38,7 @@ const HouseList = () => {
       try {
         const response = await axios.request(options);
         console.log("success");
+        console.log(response.data)
         setHouseData(response.data.props);
       } catch (error) {
         console.error("Error fetching house data:", error);

@@ -59,7 +59,7 @@ const App = () => {
             path="/contact"
             element={
               <>
-                {/* <ContactForm /> */}
+                <ContactForm />
                 <Contact />
               </>
             }

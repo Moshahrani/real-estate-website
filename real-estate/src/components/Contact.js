@@ -8,6 +8,9 @@ const Contact = () => {
             <div className="contact-form-contact-route">
             <ContactForm />
             </div>
+            <div className="map-container">
+
+            </div>
         </div>
     )
 }

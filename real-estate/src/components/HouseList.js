@@ -1,9 +1,23 @@
 import React, { useEffect, useState } from "react";
+import { Button, Modal, Form } from "react-bootstrap";
+import ContactForm from "./ContactForm";
 import axios from "axios";
 import "../css/HouseList.css";
 
 const HouseList = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleModalShow = (house) => {
+    setSelectedHouse(house.address);
+    setShowModal(true);
+  };
+
+  const handleModalClose = () => {
+    setShowModal(false);
+  };
+
   const [houseData, setHouseData] = useState([]);
+  const [selectedHouse, setSelectedHouse] = useState(null);
 
   useEffect(() => {
     const fetchHouseData = async () => {
@@ -63,6 +77,23 @@ const HouseList = () => {
                 {house.livingArea}
               </p>
             </div>
+            <Button size="sm" onClick={() => handleModalShow(house)}>
+              Contact
+            </Button>
+
+            <Modal show={showModal} onHide={handleModalClose}>
+              <Modal.Header closeButton>
+                <Modal.Title>Contact Information</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <ContactForm selectedHouse={selectedHouse} handleModalClose={handleModalClose} />
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="secondary" onClick={handleModalClose}>
+                  Close
+                </Button>
+              </Modal.Footer>
+            </Modal>
           </div>
         ))}
     </div>

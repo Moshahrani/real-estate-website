@@ -156,7 +156,7 @@ const ContactForm = ({ handleModalClose, selectedHouse, style }) => {
           <Form.Label>Phone Number</Form.Label>
           <Form.Control
             name="phone"
-            placeholder=""
+            placeholder="(012)-345-6789"
             value={formValues.phone}
             onChange={(e) =>
               setFormValues({ ...formValues, phone: e.target.value })
@@ -170,6 +170,9 @@ const ContactForm = ({ handleModalClose, selectedHouse, style }) => {
             name="message"
             as="textarea"
             style={{ height: "100px" }}
+            placeholder="Hi,
+            I'm interested in the house listed at [address]. I have a few questions regarding the property, such as [specific inquiries]. Could you please provide me with more information about the house?
+            Thank you."
             rows={3}
             value={formValues.message}
             onChange={(e) =>
@@ -184,7 +187,7 @@ const ContactForm = ({ handleModalClose, selectedHouse, style }) => {
         <div className="address" style={style} >
           <Form.Label>Address: {selectedHouse}</Form.Label>
         </div>
-        <Button style={{marginTop: "20px" }}variant="primary" type="submit" onClick={handleSubmit}>
+        <Button className="submit-button" style={{ marginTop: "20px", border: "none", borderRadius: "6px" }} variant="primary" type="submit" onClick={handleSubmit}>
           Submit
         </Button>
       </Form>

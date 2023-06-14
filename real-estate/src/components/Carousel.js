@@ -10,7 +10,8 @@ import house7 from "../media/house7.webp";
 import backyardFence from "../media/backyardFence.jpeg";
 
 const carouselBackground = {
-  backgroundImage: `url(${backyardFence})`,
+  backgroundColor: "#333",
+  // backgroundImage: `url(${backyardFence})`
   backgroundSize: 'cover',
   backgroundPosition: 'center center',
   height: '50%'

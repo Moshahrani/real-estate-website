@@ -61,7 +61,7 @@ const App = () => {
             }
           />
         </Routes>
-        <div className="d-none d-lg-block"></div>
+        {/* <div className="d-none d-lg-block"></div> */}
         <SocialLinks />
       </div>
     </Router>

@@ -12,7 +12,7 @@ const CustomNavbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       let scrolled = document.scrollingElement.scrollTop;
-      if (scrolled > 50) { 
+      if (scrolled > 50) {
         setOpacity(0.7);
       } else {
         setOpacity(1);
@@ -26,6 +26,17 @@ const CustomNavbar = () => {
     };
   }, []);
 
+  // scrolls screen back to the top when 
+  // user clicks on personal business logo
+  const handleNavItemClick = () => {
+    // if (window.innerWidth <= 768) {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    // }
+  };
+
   return (
     <Navbar
       className="custom-navbar sticky-top"
@@ -36,7 +47,14 @@ const CustomNavbar = () => {
       variant="dark"
       style={{ opacity: opacity }}
     >
-      <Navbar.Brand as={Link} to="/" onClick={() => setExpanded(false)}>
+      <Navbar.Brand
+        as={Link}
+        to="/"
+        onClick={() => {
+          handleNavItemClick();
+          setExpanded(false);
+        }}
+      >
         <img src={logo2} className="personal-logo" alt="Personal Logo" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -58,7 +76,7 @@ const CustomNavbar = () => {
             Contact
           </Nav.Link>
         </Nav>
-        <img src={davisTeam}  className="custom-logo" alt="Brand Logo" />
+        <img src={davisTeam} className="custom-logo" alt="Brand Logo" />
       </Navbar.Collapse>
     </Navbar>
   );

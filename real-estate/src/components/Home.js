@@ -76,6 +76,14 @@ const Home = () => {
       <div className="border-line2"></div>
       </div>
       <CustomCarousel />
+      <div className="whitespace-container">
+        <div className="whitespace-border">
+          <div className="whitespace-text"></div>
+        </div>
+      </div>
+      <div className="border-container">
+      <div className="border-line2"></div>
+      </div>
       <AboutMe />
       <div className="border-line"></div>
       <Steps />

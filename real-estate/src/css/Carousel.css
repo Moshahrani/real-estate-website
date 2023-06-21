@@ -45,11 +45,13 @@
     width: 100%; 
     height: 100%;  
     object-fit: cover; 
+    object-position: top;
   }
 
   .custom-carousel-img {
     width: 100%;  
     height: auto; 
+    object-position: top;
     /* object-fit: contain; */
   }
 /* ---- mobile views  */

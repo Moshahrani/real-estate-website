@@ -8,15 +8,13 @@ import house1 from "../media/house1.jpeg";
 import house6 from "../media/house6.jpeg";
 import house2 from "../media/house2.jpeg";
 import house8 from "../media/house8-2.jpeg";
-import house9 from "../media/house9.jpeg";
-import backyard from "../media/backyard.jpg";
 
 const carouselBackground = {
   backgroundColor: "#333",
   // backgroundImage: `url(${backyardFence})`
-  backgroundSize: 'cover',
-  backgroundPosition: 'center center',
-  height: '50%'
+  backgroundSize: "cover",
+  backgroundPosition: "center center",
+  height: "50%",
 };
 
 const CustomCarousel = () => {
@@ -40,13 +38,13 @@ const CustomCarousel = () => {
                 alt="house image"
               />
             </Carousel.Item>
-            {/* <Carousel.Item className="custom-carousel-item">
+            <Carousel.Item className="custom-carousel-item">
               <img
                 className="d-block w-100 custom-carousel-img"
-                src={house9}
+                src={house1}
                 alt="house image "
               />
-            </Carousel.Item> */}
+            </Carousel.Item>
             <Carousel.Item className="custom-carousel-item">
               <img
                 className="d-block w-100 custom-carousel-img"
@@ -61,13 +59,13 @@ const CustomCarousel = () => {
                 alt="house image"
               />
             </Carousel.Item>
-            {/* <Carousel.Item className="custom-carousel-item">
+            <Carousel.Item className="custom-carousel-item">
               <img
                 className="d-block w-100 custom-carousel-img"
                 src={house8}
                 alt="house image"
               />
-            </Carousel.Item> */}
+            </Carousel.Item>
           </Carousel>
         </div>
       </div>

@@ -33,18 +33,24 @@
   }
   
   .custom-carousel {
-    width: 100%; /* Adjust as per your requirements */
-    height: 500px;  /* Set this to a fixed value */
+    width: 100%; 
+    height: 500px;  
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Prevent images from bleeding outside the container */
+    overflow: hidden; 
   }
   
   .custom-carousel-img {
-    width: 100%;  /* Ensure the image takes the full width of the container */
-    height: 100%;  /* Ensure the image takes the full height of the container */
-    object-fit: cover; /* Scale and crop the image to fit the container while maintaining aspect ratio */
+    width: 100%; 
+    height: 100%;  
+    object-fit: cover; 
+  }
+
+  .custom-carousel-img {
+    width: 100%;  
+    height: auto; 
+    /* object-fit: contain; */
   }
 /* ---- mobile views  */
 
@@ -59,7 +65,7 @@
       padding: 0;
       height: auto;
     }
-    .carousel-content {
+    .carousel-content {  
       width:100%;
       border:15px solid #6b92b5;
       /* justify-content: center;

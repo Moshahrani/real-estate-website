@@ -4,10 +4,12 @@ import personal1 from "../media/personal1.jpg";
 import "../css/Carousel.css";
 import house3 from "../media/house3.jpeg";
 import house4 from "../media/house4.jpeg";
-import house5 from "../media/house5.jpeg";
+import house1 from "../media/house1.jpeg";
 import house6 from "../media/house6.jpeg";
-import house7 from "../media/house7.webp";
-import backyardFence from "../media/backyardFence.jpeg";
+import house2 from "../media/house2.jpeg";
+import house8 from "../media/house8-2.jpeg";
+import house9 from "../media/house9.jpeg";
+import backyard from "../media/backyard.jpg";
 
 const carouselBackground = {
   backgroundColor: "#333",
@@ -34,10 +36,17 @@ const CustomCarousel = () => {
             <Carousel.Item className="custom-carousel-item">
               <img
                 className="d-block w-100 custom-carousel-img"
-                src={house3}
-                alt="house image "
+                src={house2}
+                alt="house image"
               />
             </Carousel.Item>
+            {/* <Carousel.Item className="custom-carousel-item">
+              <img
+                className="d-block w-100 custom-carousel-img"
+                src={house9}
+                alt="house image "
+              />
+            </Carousel.Item> */}
             <Carousel.Item className="custom-carousel-item">
               <img
                 className="d-block w-100 custom-carousel-img"
@@ -45,17 +54,17 @@ const CustomCarousel = () => {
                 alt="house image"
               />
             </Carousel.Item>
-            {/* <Carousel.Item className="custom-carousel-item">
+            <Carousel.Item className="custom-carousel-item">
               <img
                 className="custom-carousel-img"
-                src={house5}
+                src={house3}
                 alt="house image"
               />
-            </Carousel.Item> */}
+            </Carousel.Item>
             {/* <Carousel.Item className="custom-carousel-item">
               <img
                 className="d-block w-100 custom-carousel-img"
-                src={house7}
+                src={house8}
                 alt="house image"
               />
             </Carousel.Item> */}

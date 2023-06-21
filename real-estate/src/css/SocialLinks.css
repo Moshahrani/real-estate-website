@@ -1,22 +1,27 @@
 .social-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 999;
-  }
-  
-  .social-container a {
-    margin: 0 10px;
-    font-size: 1.5rem;
-    color: #fff;
-  }
-  
-  .social-container a:hover {
-    color: #007bff;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.social-container a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.social-container a:hover {
+  color: #007bff;
+}
+
+.license-number {
+  position: absolute;
+  right: 10px;
+}

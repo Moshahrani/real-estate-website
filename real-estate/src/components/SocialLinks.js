@@ -1,4 +1,4 @@
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaIdCard } from "react-icons/fa";
 import '../css/SocialLinks.css';
 
 const SocialLinks = () => {
@@ -8,6 +8,8 @@ const SocialLinks = () => {
       <a href="https://www.instagram.com/shahrani.realtor/"><FaInstagram /></a>
       {/* <a href="https://twitter.com"><FaTwitter /></a> */}
       <a href="https://www.linkedin.com/in/shafiq-shahrani"><FaLinkedinIn /></a>
+       <a className="license-number">DRE #02192359</a>
+       {/* <FaIdCard /> */}
     </div>
   );
 };

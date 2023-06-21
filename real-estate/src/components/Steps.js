@@ -1,7 +1,4 @@
 import "../css/Steps.css";
-import Step1 from "../media/Step1.png";
-import Step2 from "../media/Step2.png";
-import Step3 from "../media/Step3.png";
 import Office1 from "../media/office1.jpg";
 import Office2 from "../media/office2.jpg";
 import Office3 from "../media/office3.jpg";

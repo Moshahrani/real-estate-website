@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Container, Navbar, Nav } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 import ".//css/CustomNavbar.css";
 import logo2 from ".//media/logo-2.png";

@@ -13,7 +13,7 @@
 }
 
 .custom-logo:hover {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .custom-navbar {
@@ -26,6 +26,7 @@
   color: #fff;
   font-size: 18px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-right: 20px;
 }
 
 .navbar-toggler {
@@ -34,19 +35,40 @@
 
 .nav-link {
   white-space: nowrap;
+  position: relative;
+}
+
+/* line animation during hover of navbar items */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 10px;
+  height: 3px;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
 }
 
 @media (max-width: 992px) {
-  .custom-logo
-   {
+  .custom-logo {
     display: none;
   }
 }
 
 /* media query for nav link padding */
 
-@media (max-width: 992px) { 
+@media (max-width: 992px) {
   .nav-link {
     margin-left: 10px;
+  }
+  .custom-navbar .nav-link {
+    margin-right: 0px;
   }
 }

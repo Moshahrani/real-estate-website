@@ -24,4 +24,15 @@
 .license-number {
   position: absolute;
   right: 10px;
+  font-size: 16px !important
+}
+
+
+
+@media screen and (max-width: 767px) {
+.license-number {
+  font-size: 12px !important;
+  right: 2px;
+}
+
 }

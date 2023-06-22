@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Container, Navbar, Nav } from "react-bootstrap";
-import { Link, useLocation } from "react-router-dom";
+import { Navbar, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import ".//css/CustomNavbar.css";
 import logo2 from ".//media/logo-2.png";
 import davisTeam from ".//media/davisTeam-2.png";
@@ -9,7 +9,7 @@ const CustomNavbar = () => {
   const [expanded, setExpanded] = useState(false);
   const [opacity, setOpacity] = useState(1);
 
-  const location = useLocation();
+  // const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,14 +28,14 @@ const CustomNavbar = () => {
     };
   }, []);
 
-  // scrolls screen back to the top when 
+  // scrolls screen back to the top when
   // user clicks on personal business logo
   const handleNavItemClick = () => {
     // if (window.innerWidth <= 768) {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
     // }
   };
 
@@ -63,19 +63,47 @@ const CustomNavbar = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
-          <Nav.Link as={Link} to="/" onClick={() => { handleNavItemClick(); setExpanded(false); }}>
+          <Nav.Link
+            as={Link}
+            to="/"
+            onClick={() => {
+              handleNavItemClick();
+              setExpanded(false);
+            }}
+          >
             Home
           </Nav.Link>
-          <Nav.Link as={Link} to="/houses" onClick={() => { handleNavItemClick(); setExpanded(false); }}>
+          <Nav.Link
+            as={Link}
+            to="/houses"
+            onClick={() => {
+              handleNavItemClick();
+              setExpanded(false);
+            }}
+          >
             Houses
           </Nav.Link>
           {/* <Nav.Link as={Link} to="/moreInfo" onClick={() => setExpanded(false)}>
             More Info
           </Nav.Link> */}
-          <Nav.Link as={Link} to="/about" onClick={() => { handleNavItemClick(); setExpanded(false); }}>
+          <Nav.Link
+            as={Link}
+            to="/about"
+            onClick={() => {
+              handleNavItemClick();
+              setExpanded(false);
+            }}
+          >
             About
           </Nav.Link>
-          <Nav.Link as={Link} to="/contact" onClick={() => { handleNavItemClick(); setExpanded(false); }}>
+          <Nav.Link
+            as={Link}
+            to="/contact"
+            onClick={() => {
+              handleNavItemClick();
+              setExpanded(false);
+            }}
+          >
             Contact
           </Nav.Link>
         </Nav>

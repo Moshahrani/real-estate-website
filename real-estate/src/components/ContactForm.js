@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import { Form, Col, Button } from "react-bootstrap";
 import "../css/ContactForm.css";
-import bayarea from "../media/bayarea.jpg";
 import emailjs from "@emailjs/browser";
 
 const ContactForm = ({ handleModalClose, selectedHouse, style }) => {
@@ -112,10 +111,6 @@ const ContactForm = ({ handleModalClose, selectedHouse, style }) => {
   };
 
   return (
-    // <div className="background-image" style={{
-    //   backgroundImage: `url(${bayarea})`,
-
-    // }}>
     <div>
       <Form ref={form} className="myForm">
         <Form.Group as={Col} controlId="formGridName">

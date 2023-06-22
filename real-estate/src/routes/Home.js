@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import "../css/Home.css";
-import Featured from "./Featured";
-import Associations from "./Associations";
-import CustomCarousel from "./Carousel";
-import AboutMe from "./AboutMe";
-import Steps from "./Steps";
+import Featured from "../components/Featured";
+import Associations from "../components/Associations";
+import CustomCarousel from "../components/Carousel";
+import AboutMe from "../components/AboutMe";
+import Steps from "../components/Steps";
 import BayBridge from "../media/BayBridge.mp4";
 
 const Home = () => {

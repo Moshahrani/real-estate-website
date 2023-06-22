@@ -1,12 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CustomNavbar from "./CustomNavbar";
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
+import Home from "./routes/Home";
+import About from "./routes/About";
+import Contact from "./routes/Contact";
 import SocialLinks from "./components/SocialLinks";
-import MoreInfo from "./components/MoreInfo";
-import Houses from "./components/Houses";
+import Houses from "./routes/Houses";
 import HouseList from "./components/HouseList";
 import ScrollToTop from './components/ScrollTop';
 // import "./App.css";

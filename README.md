@@ -18,4 +18,4 @@ The project utilizes the following technologies:
 
 
 ## Website Link
-[Website](www.shafiqshahrani.com)
+[Website](https://shafiqshahrani.com)

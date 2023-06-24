@@ -15,3 +15,7 @@ The project utilizes the following technologies:
 - Property Listings: Displaying properties with details, including images, descriptions, location, and pricing.
 - Contact and Inquiry Forms: Enabling users to contact the realtor and make inquiries about properties.
 - Responsive Design: Ensuring the website is fully responsive and optimized for various devices and screen sizes.
+
+
+## Website Link
+[Website](www.shafiqshahrani.com)

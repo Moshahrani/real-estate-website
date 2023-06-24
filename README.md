@@ -1,5 +1,5 @@
 # Real Estate Website
-This project is a real estate website developed for a client who is a realtor. As a freelance software engineer, I have designed and implemented this website to showcase properties and provide a seamless user experience for potential buyers.
+As a freelance software engineer, I have developed a real estate website for a client who is a realtor. The website showcases properties and provides a seamless user experience for potential buyers. Leveraging the Zillow API, users can explore property listings, view detailed information, and make inquiries directly through the website. With a focus on responsiveness, the website ensures optimal display across devices, enabling users to conveniently browse and inquire about homes.
 
 ## Technologies Used
 
